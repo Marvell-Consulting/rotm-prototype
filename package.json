@@ -11,7 +11,7 @@
   "bugs": "https://github.com/UKHomeOffice/rotm/issues",
   "scripts": {
     "start": "node app.js",
-    "dev": "NODE_ENV=development hof-build watch",
+    "dev": "NODE_ENV=development hof-build watch --env",
     "test": "npm run test:unit && npm run lint",
     "test:unit": "mocha",
     "test:acceptance": "so-acceptance --steps",
