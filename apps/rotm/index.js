@@ -13,6 +13,12 @@ module.exports = {
   params: '/:action?',
   confirmStep: '/check-your-report',
   steps: {
+    '/start': {
+      fields: [
+        'start'
+      ],
+      next: '/source'
+    },
     '/source': {
       fields: [
         'source'

@@ -1,0 +1,15 @@
+{{<partials-page}}
+  {{$page-content}}
+    {{#markdown}}start{{/markdown}}
+    {{#fields}}
+      {{#renderField}}{{/renderField}}
+    {{/fields}}
+    {{#input-submit}}continue{{/input-submit}}
+  {{/page-content}}
+  {{$sidebar}}
+  <aside class="govuk-related-items">
+    <h2>Start!</h2>
+    <img src="{{assetPath}}/images/source-help.svg" alt="" />
+  </aside>
+  {{/sidebar}}
+{{/partials-page}}
