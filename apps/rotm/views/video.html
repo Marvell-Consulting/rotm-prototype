@@ -1,0 +1,12 @@
+{{<partials-page}}
+  {{$encoding}}enctype="multipart/form-data"{{/encoding}}
+  {{$page-content}}
+    {{#fields}}
+      {{#renderField}}{{/renderField}}
+    {{/fields}}
+    <button type="button" id="add-image-button" class="button add-image-button visuallyhidden" tabindex="-1">{{#t}}continue{{/t}}</button>
+    <div class="link-margin">
+      <p><a href="/can-we-contact">{{#t}}pages.image.link{{/t}}</a></p>
+    </div>
+  {{/page-content}}
+{{/partials-page}}

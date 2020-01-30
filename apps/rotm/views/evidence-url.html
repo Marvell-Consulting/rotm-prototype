@@ -1,0 +1,44 @@
+{{<partials-page}}
+  {{$encoding}}enctype="multipart/form-data"{{/encoding}}
+  {{$page-content}}
+     <p>{{#t}}pages.evidence-url.summary{{/t}}</p>
+
+     {{#fields}}
+      {{#renderField}}{{/renderField}}
+    {{/fields}}
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          How to get the link of a webpage     
+
+        </span>
+      </summary>     
+      <div class="govuk-details__text">
+        <p>Try this:</p>
+        <ul class="govuk-list govuk-list-bullet">
+        <li>Hold down the <strong>power button</strong> and <strong>volume down</strong> at the same time for a few seconds.</li>
+        <li>The screenshot should be saved in your <strong>Gallery</strong> or <strong>Pictures</strong>.</li>
+        </ul>
+        <br>
+        <p>If that doesn’t work, try:</p>
+        <ul class="govuk-list govuk-list-number">
+          <li>Holding down the <strong>power button</strong> and the <strong>home button</strong> or home key on your phone’s screen. </li>
+          <li>Holding down the <strong>power button</strong> and the <strong>volume up</strong> at the same time</li>
+        </ul>
+      </div>
+    </details>
+
+    {{#input-submit}}continue{{/input-submit}}
+
+<!--     <div class="link-margin">
+    
+      <p><a href="/evidence-written">{{#t}}pages.evidence-url.link{{/t}}</a></p>
+    </div> -->
+  {{/page-content}}
+  {{$sidebar}}
+  <aside class="govuk-related-items">
+    <h2>Where to find a link</h2>
+    <img src="{{assetPath}}/images/source-help.svg" alt="" />
+  </aside>
+  {{/sidebar}}
+{{/partials-page}}

@@ -1,15 +1,17 @@
 {{<partials-page}}
   {{$page-content}}
+    <div class="govuk-warning-text">
+      <span class="govuk-warning-text__icon"aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">To report a crime that's happening now, or if there's a threat to someone's life, call 999 immediately.</strong>
+    </div>
     {{#markdown}}start{{/markdown}}
-    {{#fields}}
-      {{#renderField}}{{/renderField}}
-    {{/fields}}
-    {{#input-submit}}continue{{/input-submit}}
+    <br>
+    {{#input-submit}}start{{/input-submit}}
   {{/page-content}}
   {{$sidebar}}
-  <aside class="govuk-related-items">
+  <!-- <aside class="govuk-related-items">
     <h2>Start!</h2>
     <img src="{{assetPath}}/images/source-help.svg" alt="" />
-  </aside>
+  </aside> -->
   {{/sidebar}}
 {{/partials-page}}

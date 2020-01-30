@@ -1,4 +1,6 @@
 {
+  "start": "Report in confidence",
   "send-report": "Send report",
-  "add-image": "Add image"
+  "add-image": "Add image",
+  "add-evidence": "Upload something"
 }

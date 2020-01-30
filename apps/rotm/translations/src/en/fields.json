@@ -6,6 +6,60 @@
       "required": "Tell us where you found the material"
     }
   },
+  "source-website": {
+    "label": "Where was the content posted?",
+    "options": {
+      "facebook": {
+        "label": "Facebook"
+      },
+      "twitter": {
+        "label": "Twitter"
+      },
+      "youtube": {
+        "label": "YouTube"
+      },
+      "whatsapp": {
+        "label": "WhatsApp"
+      },
+      "linkedin": {
+        "label": "LinkedIn"
+      },
+      "somewhere-else": {
+        "label": "Somewhere else"
+      }
+    }
+  },
+
+  "report-reason": {
+    "label": "Reason for reporting"
+  },
+
+  "source-somewhere-else": {
+    "label": "Where did you find the content?",
+    "hint": "For example, name of the website or app"
+  },
+
+  "material-type": {
+    "label": "What are you reporting?",
+    "options": {
+      "video": {
+        "label": "A video"
+      },
+      "image": {
+        "label": "An image"
+      },
+      "comment": {
+        "label": "Comments promoting terrorism or extremeism"
+      },
+      "group": {
+        "label": "A terrorist or extremist group"
+      },
+      "something-else": {
+        "label": "Something else"
+      }
+    }
+  },
+
   "more-info": {
     "label": "Additional information (optional)"
   },
@@ -16,6 +70,57 @@
       "extname": "Select a valid file type (jpg, jpeg, png)",
       "unsaved": "We have not been able to upload the photo or screenshot"
     }
+  },
+  "video": {
+    "options": {
+      "yes": {
+        "label": "Yes"
+      },
+      "no": {
+        "label": "No"
+      }
+    }
+  },
+  "video-upload": {
+    "label": "Upload your video"
+  },
+  "who-shared": {
+    "label": "Name",
+    "hint": "This is the name the person uses on [PLATFORM]"
+  },
+  "evidence-general": {
+    "label": "Any other useful info?",
+    "hint": "It’s helpful to know the names of people who shared or promoted the video or when the video was shared "
+  },
+  "evidence-upload": {
+    "options": {
+      "yes": {
+        "label": "Yes, I have a photo or video of the material"
+      },
+      "no": {
+        "label": "No, I don’t have anything like this"
+      }
+    }
+  },
+  "yes-upload": {
+    "label": "Paste or drag a file here"
+  },
+  "evidence-written": {
+    "label": "Written statement"
+  },
+  "evidence-url": {
+    "options": {
+      "yes": {
+        "label": "Yes, I have a link to the material"
+      },
+      "no": {
+        "label": "No, I don’t have a link"
+      }
+    }
+  },
+  "yes-url": {
+    "label": "Copy and paste the link here:",
+    "hint": "For example, report-terrorism.gov.uk/page/1234"
   },
   "add-image": {
     "legend": "Is this correct?",
@@ -30,5 +135,61 @@
     "validation": {
       "required": "Tell us if you want to add this image"
     }
+  },
+  "can-we-contact": {
+    "hint": "Being able to contact you may help us with our enquiries",
+    "options": {
+      "yes": {
+        "label": "I’ll give my contact details"
+      },
+      "no": {
+        "label": "No, I’d like to remain anonymous"
+      }
+    },
+    "validation": {
+      "required": "Tell us if you want to add your contact details"
+    }
+  },
+  "contact-details-name": {
+    "label": "What is your full name?"
+  },
+  "contact-details-method": {
+    "label": "How would you prefer to be contacted?",
+    "hint": "How would you prefer to be contacted?",
+    "options": {
+      "email": {
+        "label": "Email"
+      },
+      "phone": {
+        "label": "Phone"
+      },
+      "text": {
+        "label": "Text message"
+      }
+    }
+  },
+  "contact-email": {
+    "label": "What is your email address?"
+  },
+  "contact-phone": {
+    "label": "What is your phone number?"
+  },
+  "contact-text": {
+    "label": "What is your phone number?"
+  },
+  "send-copy": {
+    "legend": " ",
+    "options": {
+      "yes": {
+        "label": "Send me a copy of this report"
+      },
+      "no": {
+        "label": "No"
+      }
+    }
+  },
+  "send-copy-email": {
+    "label": "Email address"
   }
+
 }

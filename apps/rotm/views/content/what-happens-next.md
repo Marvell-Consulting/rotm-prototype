@@ -1,7 +1,6 @@
 ##What happens next
 
-We have sent your anonymous report to the police team dealing with online terrorist material.
+The police will investigate and take any action needed. 
 
-[What did you think of this service? (takes 30 seconds)](https://eforms.homeoffice.gov.uk/outreach/Feedback.ofml?FormName=terrorism_reporting/)
-
-[Start a new report](/source)
+For the safety of you and those around you, you are encouraged to delete any photos or copies of the offensive material from your device. 
+Thank you for your report. 

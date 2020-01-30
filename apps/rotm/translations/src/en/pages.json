@@ -1,6 +1,6 @@
 {
   "start": {
-    "header": "Start"
+    "header": "Report online material promoting terrorism or extremism"
   },
   "source": {
     "header": "Where did you find the material?"
@@ -10,12 +10,56 @@
     "intro": "So we can find it, please provide any information you think is helpful. You can provide a screenshot or photo on the next page.",
     "summary": "Information that can help us"
   },
+  "report-reason": {
+    "header": "Why are you reporting it?",
+    "summary": "Explain what the material is and why it’s offensive."
+  },
   "image": {
     "header": "Do you want to add a photo or screenshot?",
     "link": "Continue without adding an image"
   },
+  "evidence": {
+    "header": "Can you provide some evidence?",
+    "summary": "This is helpful if the material gets deleted. Don’t worry about saving images to your device, it’s safe because you’re reporting them. ",
+    "link": "Continue without adding any evidence"
+  },
+  "evidence-upload": {
+    "header": "Can you send us a photo?",
+    "summary": "This is helpful if the material gets deleted. Don’t worry about saving images to your device, it’s safe because you’re reporting them.",
+    "link": "Continue without providing any evidence"
+  },
+
+  "evidence-url": {
+    "header": "Is there a link you can share?",
+    "summary": "It’s easier to find the material if you can provide a link to the page it appears on, or the post if it’s been posted on social media.",
+    "link": "Continue without adding a url"
+  },
+  "evidence-written": {
+    "header": "Can you tell us about the material?",
+    "summary": "Tell us what you found ",
+    "link": "Continue without providing a written statement"
+  },
+  "evidence-added-2": {
+    "header": "Can you provide a photo or other evidence?",
+    "summary": "This is helpful if the material gets deleted. Don’t worry about saving images to your device, it’s safe because you’re reporting them. ",
+    "link": "Continue without adding any evidence"
+  },
+  "video": {
+    "header": "Can you provide a copy of the video?",
+    "summary": "This is helpful if the material gets deleted.",
+    "link": "Continue without adding a video"
+  },
   "add-image": {
     "header": "Is this correct?"
+  },
+  "who-shared": {
+    "header": "Who shared or promoted the material?"
+  },
+  "can-we-contact": {
+    "header": "Are you willing to be contacted?"
+  },
+  "contact-details": {
+    "header": "What are your contact details?"
   },
   "check-your-report": {
     "header": "Check your report"
@@ -35,7 +79,7 @@
     }
   },
   "confirmation": {
-    "alert-1": "Thank you",
-    "alert-2": "We’ve received your report."
+    "alert-1": "Report sent",
+    "alert-2": "If you would like a copy of your report emailed to you, please provide an email address."
   }
 }

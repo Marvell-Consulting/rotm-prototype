@@ -1,0 +1,38 @@
+{{<partials-page}}
+  {{$encoding}}enctype="multipart/form-data"{{/encoding}}
+
+  {{$page-content}}
+    <p class="lede">{{#t}}pages.evidence-added-2.summary{{/t}}</p>
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          Help me take a photo of my screen     
+
+        </span>
+      </summary>     
+      <div class="govuk-details__text">
+        <p>Try this:</p>
+        <ul class="govuk-list govuk-list-bullet">
+        <li>Hold down the <strong>power button</strong> and <strong>volume down</strong> at the same time for a few seconds.</li>
+        <li>The screenshot should be saved in your <strong>Gallery</strong> or <strong>Pictures</strong>.</li>
+        </ul>
+        <br>
+        <p>If that doesn’t work, try:</p>
+        <ul class="govuk-list govuk-list-number">
+          <li>Holding down the <strong>power button</strong> and the <strong>home button</strong> or home key on your phone’s screen. </li>
+          <li>Holding down the <strong>power button</strong> and the <strong>volume up</strong> at the same time</li>
+        </ul>
+      </div>
+    </details>
+    {{#values.image-preview}}
+      <div class="image-wrapper">
+        <img src="{{values.image-preview}}" alt="" width="200" class="image-preview" />
+      </div>
+    {{/values.image-preview}}
+    {{#values.image}}
+      <p>{{values.image}}</p>
+    {{/values.image}}
+    
+    {{#input-submit}}continue{{/input-submit}}
+  {{/page-content}}
+{{/partials-page}}

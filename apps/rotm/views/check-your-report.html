@@ -1,4 +1,4 @@
-{{<partials-page}}
+  {{<partials-page}}
   {{$page-content}}
     {{#rows}}
       <table class="table-details">
@@ -23,6 +23,9 @@
         </tbody>
       </table>
     {{/rows}}
+    {{#fields}}
+      {{#renderField}}{{/renderField}}
+    {{/fields}}
     {{#input-submit}}send-report{{/input-submit}}
   {{/page-content}}
 {{/partials-page}}

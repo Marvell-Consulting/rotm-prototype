@@ -1,0 +1,23 @@
+{{<partials-page}}
+  {{$encoding}}enctype="multipart/form-data"{{/encoding}}
+  {{$page-content}}
+ 
+    <p>It helps our investigation if you can provide:</p>
+    <ul class="gouvk-list">
+      <li>names of people who shared or promoted the material</li>
+      <li>when the material was shared</li>
+      <li>any other details that can help us find the material again</li>
+    </ul>
+    <br>
+    {{#fields}}
+      {{#renderField}}{{/renderField}}
+    {{/fields}}
+
+    {{#input-submit}}continue{{/input-submit}}
+
+    <div class="link-margin">
+      <p><a href="/evidence-written">{{#t}}pages.evidence-written.link{{/t}}</a></p>
+    </div>
+  {{/page-content}}
+
+{{/partials-page}}

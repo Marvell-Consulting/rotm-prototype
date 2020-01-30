@@ -1,6 +1,9 @@
 'use strict';
 
 require('hof-theme-govuk');
+const govuk = require('govuk-frontend');
+
+govuk.initAll();
 
 document.getElementById('add-image-button').classList.remove('visuallyhidden');
 
