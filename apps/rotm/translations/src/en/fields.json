@@ -106,7 +106,17 @@
     "label": "Paste or drag a file here"
   },
   "evidence-written": {
-    "label": "Written statement"
+    "options": {
+      "yes": {
+        "label": "Yes, I have more information"
+      },
+      "no": {
+        "label": "No, I’ve told you everything I can"
+      }
+    }
+  },
+  "yes-written": {
+    "label": "Additional information"
   },
   "evidence-url": {
     "options": {

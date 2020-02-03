@@ -5,6 +5,10 @@ const config = require('./config');
 const mockAPIs = require('./mock-apis');
 const bodyParser = require('busboy-body-parser');
 
+if (process.env.REDIS_URL) {
+  settings.redis = process.env.REDIS_URL;
+}
+
 const options = {
   start: false,
   routes: [

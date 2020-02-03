@@ -68,8 +68,23 @@ module.exports = {
     },
     '/evidence-upload': {
       fields: [
-        'evidence-upload',
+        'evidence-upload'
       ],
+      behaviours: [skipStep, saveImage, createThumbnail],
+      next: '/evidence-upload-confirm',
+      continueOnEdit: true
+    },
+    '/evidence-upload-confirm': {
+      fields: [
+        
+      ],
+      forks: [{
+        target: '/evidence-upload',
+        condition: {
+          field: 'add-image',
+          value: 'no'
+        }
+      }],
       next: '/evidence-url',
       continueOnEdit: true
     },

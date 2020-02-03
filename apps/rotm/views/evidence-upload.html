@@ -3,27 +3,7 @@
   {{$page-content}}
     <p class="lede">{{#t}}pages.evidence.summary{{/t}}</p>
     <!-- {{#markdown}}image{{/markdown}} -->
-    <details class="govuk-details" data-module="govuk-details">
-      <summary class="govuk-details__summary">
-        <span class="govuk-details__summary-text">
-          Help me take a photo of my screen     
-
-        </span>
-      </summary>     
-      <div class="govuk-details__text">
-        <p>Try this:</p>
-        <ul class="govuk-list govuk-list-bullet">
-        <li>Hold down the <strong>power button</strong> and <strong>volume down</strong> at the same time for a few seconds.</li>
-        <li>The screenshot should be saved in your <strong>Gallery</strong> or <strong>Pictures</strong>.</li>
-        </ul>
-        <br>
-        <p>If that doesn’t work, try:</p>
-        <ul class="govuk-list govuk-list-number">
-          <li>Holding down the <strong>power button</strong> and the <strong>home button</strong> or home key on your phone’s screen. </li>
-          <li>Holding down the <strong>power button</strong> and the <strong>volume up</strong> at the same time</li>
-        </ul>
-      </div>
-    </details>
+    
 <!--      <label>Paste or drag something here</label><br>
     <input type="text" name="">
     <br>
@@ -41,6 +21,10 @@
       {{#renderField}}{{/renderField}}
     {{/fields}}
     {{#input-submit}}continue{{/input-submit}}
+    <br>
+    <br>
+    {{>partials-help-screenshots-phone}}
+    {{>partials-help-screenshots-desktop}}
 <!-- 
     <div class="link-margin">
       <p><a href="/can-we-contact">{{#t}}pages.evidence.link{{/t}}</a></p>

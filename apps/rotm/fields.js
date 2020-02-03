@@ -95,24 +95,41 @@ module.exports = {
     },
      options: [{
       value: 'yes',
-      toggle: 'yes-upload',
-      child: 'input-text'
+      toggle: 'image',
+      child: 'input-file'
     }, {
       value: 'no'
     }]
   },
-  'yes-upload': {
-    mixin: 'textarea'
+  'image': {
+    mixin: 'input-file',
+    validate: [function extname(value) {
+      return extensions.includes(path.extname(value));
+    }]
   },
   'evidence-general': {
     mixin: 'textarea'
   },
   'evidence-written': {
+    mixin: 'radio-group',
+    validate: 'required',
+    legend: {
+      className: 'visuallyhidden'
+    },
+     options: [{
+      value: 'yes',
+      toggle: 'yes-written',
+      child: 'textarea'
+    }, {
+      value: 'no'
+    }]
+  },
+  'yes-written': {
     mixin: 'textarea',
     attributes: [{
       attribute: 'rows',
-      value: 10
-    }],
+      value: 12
+    }]
   },
   'evidence-url': {
     mixin: 'radio-group',

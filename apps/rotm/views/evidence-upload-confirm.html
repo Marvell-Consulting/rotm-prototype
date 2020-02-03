@@ -1,0 +1,27 @@
+{{<partials-page}}
+{{$page-content}}
+    
+    {{#values.image-preview}}
+      <div class="image-wrapper">
+        <img src="{{values.image-preview}}" alt="" width="300" class="image-preview" />
+      </div>
+    {{/values.image-preview}}
+    {{#values.image}}
+      <p>{{values.image}}</p>
+    {{/values.image}}
+    <p><a href="evidence-upload">Try uploading a different image</a></p>
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          Add another image    
+
+        </span>
+      </summary>     
+      <div class="govuk-details__text">
+       
+        
+      </div>
+    </details>
+    {{#input-submit}}continue{{/input-submit}}
+  {{/page-content}}
+{{/partials-page}}

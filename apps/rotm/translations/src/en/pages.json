@@ -28,6 +28,11 @@
     "summary": "This is helpful if the material gets deleted. Don’t worry about saving images to your device, it’s safe because you’re reporting them.",
     "link": "Continue without providing any evidence"
   },
+  "evidence-upload-confirm": {
+    "header": "Is this correct?",
+    "summary": "This is helpful if the material gets deleted. Don’t worry about saving images to your device, it’s safe because you’re reporting them.",
+    "link": "Continue without providing any evidence"
+  },
 
   "evidence-url": {
     "header": "Is there a link you can share?",
