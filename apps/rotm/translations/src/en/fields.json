@@ -7,7 +7,7 @@
     }
   },
   "source-website": {
-    "label": "Where was the content posted?",
+    "label": "Where did you find the material?",
     "options": {
       "facebook": {
         "label": "Facebook"
@@ -64,7 +64,7 @@
     "label": "Additional information (optional)"
   },
   "image": {
-    "label": "Select an image",
+    "label": "Select or drag an image here",
     "validation": {
       "required": "Select an image",
       "extname": "Select a valid file type (jpg, jpeg, png)",
@@ -101,6 +101,20 @@
         "label": "No, I don’t have anything like this"
       }
     }
+  },
+  "evidence-url-auto": {
+    "options": {
+      "yes": {
+        "label": "Yes, this is the material"
+      },
+      "no": {
+        "label": "No, this isn’t right",
+        "hint": "You’ll be able to choose your own image instead"
+      }
+    }
+  },
+  "image-paste": {
+    "label": "or paste a file here"
   },
   "yes-upload": {
     "label": "Paste or drag a file here"
@@ -147,10 +161,9 @@
     }
   },
   "can-we-contact": {
-    "hint": "Being able to contact you may help us with our enquiries",
     "options": {
       "yes": {
-        "label": "I’ll give my contact details"
+        "label": "Yes, I’ll give my contact details"
       },
       "no": {
         "label": "No, I’d like to remain anonymous"
@@ -161,7 +174,7 @@
     }
   },
   "contact-details-name": {
-    "label": "What is your full name?"
+    "label": "Full name"
   },
   "contact-details-method": {
     "label": "How would you prefer to be contacted?",
@@ -179,19 +192,19 @@
     }
   },
   "contact-email": {
-    "label": "What is your email address?"
+    "label": "Email address"
   },
   "contact-phone": {
-    "label": "What is your phone number?"
+    "label": "Phone number"
   },
   "contact-text": {
-    "label": "What is your phone number?"
+    "label": "Text message"
   },
   "send-copy": {
     "legend": " ",
     "options": {
       "yes": {
-        "label": "Send me a copy of this report"
+        "label": "Email me a copy of my report"
       },
       "no": {
         "label": "No"

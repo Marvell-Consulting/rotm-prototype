@@ -24,7 +24,7 @@
     "link": "Continue without adding any evidence"
   },
   "evidence-upload": {
-    "header": "Can you send us a photo?",
+    "header": "Can you send us an image?",
     "summary": "This is helpful if the material gets deleted. Don’t worry about saving images to your device, it’s safe because you’re reporting them.",
     "link": "Continue without providing any evidence"
   },
@@ -39,8 +39,12 @@
     "summary": "It’s easier to find the material if you can provide a link to the page it appears on, or the post if it’s been posted on social media.",
     "link": "Continue without adding a url"
   },
+  "evidence-url-auto": {
+    "header": "Is this the material?",
+    "summary": "We used the link you provided to take an image of the web page"
+  },
   "evidence-written": {
-    "header": "Can you tell us about the material?",
+    "header": "Is there anything else you can tell us?",
     "summary": "Tell us what you found ",
     "link": "Continue without providing a written statement"
   },

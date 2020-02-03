@@ -2,31 +2,25 @@
   {{$encoding}}enctype="multipart/form-data"{{/encoding}}
   {{$page-content}}
      <p>{{#t}}pages.evidence-url.summary{{/t}}</p>
-
-     {{#fields}}
-      {{#renderField}}{{/renderField}}
-    {{/fields}}
     <details class="govuk-details" data-module="govuk-details">
       <summary class="govuk-details__summary">
         <span class="govuk-details__summary-text">
-          How to get the link of a webpage     
+          Help me find the link     
 
         </span>
       </summary>     
       <div class="govuk-details__text">
-        <p>Try this:</p>
-        <ul class="govuk-list govuk-list-bullet">
-        <li>Hold down the <strong>power button</strong> and <strong>volume down</strong> at the same time for a few seconds.</li>
-        <li>The screenshot should be saved in your <strong>Gallery</strong> or <strong>Pictures</strong>.</li>
-        </ul>
-        <br>
-        <p>If that doesn’t work, try:</p>
-        <ul class="govuk-list govuk-list-number">
-          <li>Holding down the <strong>power button</strong> and the <strong>home button</strong> or home key on your phone’s screen. </li>
-          <li>Holding down the <strong>power button</strong> and the <strong>volume up</strong> at the same time</li>
-        </ul>
+        <!-- <p>On a website, the link or URL appears at the top of the page. It usually starts with the website name and may be followed by other words, letters or symbols. For example, ‘facebook.com/settings?tab=blocking’</p> -->
+        <p>You can find the link or URL at the top of the page. It starts with facebook.com and might be followed by other words, letters or symbols. For example, facebook.com/settings?tab=blocking</p>
+
+        <p>To link to something someone has posted, click on the time of the post, for example ’18 hrs’ or ‘Yesterday at 06:52’. This will open the post and you can copy the link at the top of the page as normal.
+        </p>
       </div>
     </details>
+
+     {{#fields}}
+      {{#renderField}}{{/renderField}}
+    {{/fields}}
 
     {{#input-submit}}continue{{/input-submit}}
 

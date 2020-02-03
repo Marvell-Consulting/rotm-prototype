@@ -49,21 +49,23 @@ module.exports = {
       ],
       next: '/image'
     },
+    '/evidence': {
+      fields: [
+        'image',
+        'image-paste',
+        'yes-url',
+        'yes-written'
+      ],
+      behaviours: [skipStep, saveImage, createThumbnail],
+      next: '/evidence-added-2',
+      continueOnEdit: true
+    },
     '/image': {
       fields: [
         'image'
       ],
       behaviours: [skipStep, saveImage, createThumbnail],
       next: '/add-image',
-      continueOnEdit: true
-    },
-    '/evidence': {
-      fields: [
-        'evidence-url',
-        'evidence-written'
-      ],
-      behaviours: [skipStep, saveImage, createThumbnail],
-      next: '/evidence-added-2',
       continueOnEdit: true
     },
     '/evidence-upload': {
@@ -88,6 +90,13 @@ module.exports = {
     '/evidence-url': {
       fields: [
         'evidence-url'
+      ],
+      next: '/evidence-written',
+      continueOnEdit: true
+    },
+    '/evidence-url-auto': {
+      fields: [
+        'evidence-url-auto'
       ],
       next: '/evidence-written',
       continueOnEdit: true
@@ -176,8 +185,14 @@ module.exports = {
       nullValue: 'pages.confirm.undefined',
       sections: {
         'summary': [
-          'source',
-          'more-info'
+          'source-website',
+          'report-reason',
+          'yes-url',
+          'yes-written',
+          'contact-details-name',
+          // 'contact-email',
+          'contact-phone'
+          // 'contact-text'
           // image preview is hardcoded in the page template
         ]
       },

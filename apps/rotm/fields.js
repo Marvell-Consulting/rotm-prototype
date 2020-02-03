@@ -101,6 +101,12 @@ module.exports = {
       return extensions.includes(path.extname(value));
     }]
   },
+  'image-paste': {
+    mixin: 'input-text',
+    legend: {
+      className: 'visuallyhidden'
+    }
+  },
   'evidence-general': {
     mixin: 'textarea'
   },
@@ -141,6 +147,18 @@ module.exports = {
   },
   'yes-url': {
     mixin: 'input-text'
+  },
+  'evidence-url-auto': {
+    mixin: 'radio-group',
+    validate: 'required',
+    legend: {
+      className: 'visuallyhidden'
+    },
+     options: [{
+      value: 'yes'
+    }, {
+      value: 'no'
+    }]
   },
   'send-copy': {
     mixin: 'checkbox-group',

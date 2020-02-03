@@ -1,7 +1,10 @@
 {{<partials-page}}
   {{$encoding}}enctype="multipart/form-data"{{/encoding}}
   {{$page-content}}
-    <p class="lede">{{#t}}pages.evidence.summary{{/t}}</p>
+    <p>This is helpful if the material gets deleted. You can also send videos or other files.</p> 
+    <p>Don’t worry about saving images to your device, it’s safe because you’re reporting them.</p> 
+    {{>partials-help-screenshots-desktop}}
+   <!--  {{>partials-help-screenshots-desktop}} -->
     <!-- {{#markdown}}image{{/markdown}} -->
     
 <!--      <label>Paste or drag something here</label><br>
@@ -23,8 +26,7 @@
     {{#input-submit}}continue{{/input-submit}}
     <br>
     <br>
-    {{>partials-help-screenshots-phone}}
-    {{>partials-help-screenshots-desktop}}
+
 <!-- 
     <div class="link-margin">
       <p><a href="/can-we-contact">{{#t}}pages.evidence.link{{/t}}</a></p>
