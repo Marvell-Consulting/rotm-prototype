@@ -20,3 +20,4 @@ document.getElementById('add-image-button').addEventListener('click', function i
 document.getElementById('file-upload').addEventListener('change', function fileUploadChangeEvent() {
   this.form.submit();
 });
+

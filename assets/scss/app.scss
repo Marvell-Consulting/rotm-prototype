@@ -144,4 +144,16 @@ textarea.form-control {
     border-left: 10px solid #b1b4b6;
 }
 
+// stying upload input
+#image {
+    padding: 30px;
+    background-color: #f3f2f1;
+    border: none;
+    width: 100%;
+    text-align: center;
+  }
 
+// fixing tab sizes
+.govuk-tabs__tab {
+  font-size: 19px;
+}
