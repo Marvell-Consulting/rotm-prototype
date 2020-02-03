@@ -1,9 +1,14 @@
+/* eslint no-process-env: 0 */
 'use strict';
 
 const hof = require('hof');
 const config = require('./config');
 const mockAPIs = require('./mock-apis');
 const bodyParser = require('busboy-body-parser');
+
+if (process.env.REDIS_URL) {
+  config.redis = process.env.REDIS_URL;
+}
 
 const options = {
   start: false,
