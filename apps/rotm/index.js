@@ -72,7 +72,7 @@ module.exports = {
       fields: [
         'evidence-upload'
       ],
-      behaviours: [skipStep, saveImage, createThumbnail],
+      // behaviours: [skipStep, saveImage, createThumbnail],
       next: '/evidence-upload-confirm',
       continueOnEdit: true
     },
