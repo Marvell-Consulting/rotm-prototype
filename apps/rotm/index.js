@@ -75,9 +75,6 @@ module.exports = {
       continueOnEdit: true
     },
     '/evidence-upload-confirm': {
-      fields: [
-        
-      ],
       forks: [{
         target: '/evidence-upload',
         condition: {

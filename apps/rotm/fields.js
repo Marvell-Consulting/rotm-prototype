@@ -81,12 +81,6 @@ module.exports = {
       'no'
     ]
   },
-  'image': {
-    mixin: 'input-file',
-    validate: [function extname(value) {
-      return extensions.includes(path.extname(value));
-    }]
-  },
   'evidence-upload': {
     mixin: 'radio-group',
     validate: 'required',
