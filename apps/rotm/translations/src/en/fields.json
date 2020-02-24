@@ -18,18 +18,22 @@
 
   "material-type": {
     "label": "What are you reporting?",
+    "hint": "Select all that apply",
     "options": {
-      "video": {
-        "label": "A video"
-      },
       "image": {
-        "label": "An image"
+        "label": "Images"
+      },
+      "video": {
+        "label": "Videos"
+      },
+      "article": {
+        "label": "Articles or blogs"
       },
       "comment": {
         "label": "Comments promoting terrorism or extremeism"
       },
-      "group": {
-        "label": "A terrorist or extremist group"
+      "speech": {
+        "label": "Speeches"
       },
       "something-else": {
         "label": "Something else"

@@ -12,16 +12,17 @@ module.exports = {
     mixin: 'textarea'
   },
   'material-type': {
-    mixin: 'radio-group',
+    mixin: 'checkbox-group',
     validate: 'required',
     legend: {
       className: 'visuallyhidden'
     },
     options: [
-      'video',
       'image',
+      'video',
+      'article',
       'comment',
-      'group',
+      'speech',
       'something-else'
     ]
   },
