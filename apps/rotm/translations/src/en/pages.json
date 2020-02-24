@@ -24,7 +24,7 @@
     "link": "Continue without adding any evidence"
   },
   "evidence-upload": {
-    "header": "Can you send us an image?",
+    "header": "Can you send us some evidence?",
     "summary": "This is helpful if the material gets deleted. Don’t worry about saving images to your device, it’s safe because you’re reporting them.",
     "link": "Continue without providing any evidence"
   },
@@ -44,7 +44,7 @@
     "summary": "We used the link you provided to take an image of the web page"
   },
   "evidence-written": {
-    "header": "Is there anything else you can tell us?",
+    "header": "Do you have any other information?",
     "summary": "Tell us what you found ",
     "link": "Continue without providing a written statement"
   },
@@ -69,6 +69,10 @@
   },
   "contact-details": {
     "header": "What are your contact details?"
+  },
+  "contact-details-method": {
+    "header": "How would you prefer to be contacted?",
+    "label": "How would you prefer to be contacted?"
   },
   "check-your-report": {
     "header": "Check your report"

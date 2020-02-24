@@ -11,9 +11,8 @@ module.exports = {
   'more-info': {
     mixin: 'textarea'
   },
-  'material-type': {
+  'material': {
     mixin: 'checkbox-group',
-    validate: 'required',
     legend: {
       className: 'visuallyhidden'
     },
@@ -24,7 +23,8 @@ module.exports = {
       'comment',
       'speech',
       'something-else'
-    ]
+    ],
+    validate: 'required'
   },
   'report-reason': {
     mixin: 'textarea',
@@ -66,7 +66,7 @@ module.exports = {
     legend: {
       className: 'visuallyhidden'
     },
-     options: [{
+    options: [{
       value: 'yes',
       toggle: 'image',
       child: 'input-file'
@@ -102,13 +102,13 @@ module.exports = {
     legend: {
       className: 'visuallyhidden'
     },
-     options: [{
+    options: [{
       value: 'yes',
       toggle: 'yes-url',
       child: 'input-text'
     }, {
       value: 'no'
-    }]
+    }],
   },
   'yes-url': {
     mixin: 'input-text'
@@ -146,8 +146,14 @@ module.exports = {
       child: 'input-file'
     }, {
       value: 'no'
-    }
-    ]
+    }]
+  },
+  'contact-details-name': {
+    mixin: 'input-text',
+    legend: {
+      className: 'visuallyhidden'
+    },
+    validate: 'required'
   },
   'contact-details-method': {
     mixin: 'radio-group',
@@ -162,10 +168,6 @@ module.exports = {
     }, {
       value: 'phone',
       toggle: 'contact-phone',
-      child: 'input-text'
-    }, {
-      value: 'text',
-      toggle: 'contact-text',
       child: 'input-text'
     }]
   }

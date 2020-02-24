@@ -17,11 +17,11 @@ module.exports = {
       fields: [
         'start'
       ],
-      next: '/material-type'
+      next: '/material'
     },
-    '/material-type': {
+    '/material': {
       fields: [
-        'material-type'
+        'material'
       ],
       next: '/evidence-url'
     },
@@ -173,12 +173,12 @@ module.exports = {
       nullValue: 'pages.confirm.undefined',
       sections: {
         'summary': [
-          'source-website',
-          'report-reason',
+          'material',
           'yes-url',
-          'yes-written',
+          'evidence-written',
+          'can-we-contact',
           'contact-details-name',
-          // 'contact-email',
+          'contact-email',
           'contact-phone'
           // 'contact-text'
           // image preview is hardcoded in the page template

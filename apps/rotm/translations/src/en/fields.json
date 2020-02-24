@@ -12,7 +12,7 @@
     "hint": "For example, name of the website or app"
   },
 
-  "material-type": {
+  "material": {
     "label": "What are you reporting?",
     "hint": "Select all that apply",
     "options": {
@@ -26,7 +26,7 @@
         "label": "Articles or blogs"
       },
       "comment": {
-        "label": "Comments promoting terrorism or extremeism"
+        "label": "Comments"
       },
       "speech": {
         "label": "Speeches"
@@ -34,6 +34,9 @@
       "something-else": {
         "label": "Something else"
       }
+    },
+    "validation": {
+      "required": "Select the reason for your complaint"
     }
   },
 
@@ -72,11 +75,14 @@
   "evidence-upload": {
     "options": {
       "yes": {
-        "label": "Yes, I have a photo or video of the material"
+        "label": "Yes, I have evidence"
       },
       "no": {
-        "label": "No, I don’t have anything like this"
+        "label": "No, I don’t have anything"
       }
+    },
+    "validation": {
+      "required": "Select whether you have some evidence you can share"
     }
   },
   "evidence-url-auto": {
@@ -88,6 +94,9 @@
         "label": "No, this isn’t right",
         "hint": "You’ll be able to choose your own image instead"
       }
+    },
+    "validation": {
+      "required": "Select the reason for your complaint"
     }
   },
   "image-paste": {
@@ -96,8 +105,9 @@
   "yes-upload": {
     "label": "Paste or drag a file here"
   },
+
   "evidence-written": {
-    "label": "Additional information"
+    "label": "Supporting information for our investigation"
   },
   "evidence-url": {
     "options": {
@@ -107,10 +117,13 @@
       "no": {
         "label": "No, I don’t have a link"
       }
+    },
+    "validation": {
+      "required": "Select whether you have a link to the material or not"
     }
   },
   "yes-url": {
-    "label": "Copy and paste the link here:",
+    "label": "Link",
     "hint": "For example, report-terrorism.gov.uk/page/1234"
   },
   "add-image": {
@@ -128,6 +141,7 @@
     }
   },
   "can-we-contact": {
+    "label": "Can we contact you?",
     "options": {
       "yes": {
         "label": "Yes, I’ll give my contact details"
@@ -141,28 +155,35 @@
     }
   },
   "contact-details-name": {
-    "label": "Full name"
+    "label": "Full name",
+    "validation": {
+      "required": "Enter your full name"
+    }
   },
   "contact-details-method": {
-    "label": "How would you prefer to be contacted?",
     "hint": "How would you prefer to be contacted?",
     "options": {
       "email": {
-        "label": "Email"
+        "label": "Email",
+        "validation": {
+          "required": "Enter your full name"
+        }
       },
       "phone": {
-        "label": "Phone"
-      },
-      "text": {
-        "label": "Text message"
+        "label": "Telephone"
       }
-    }
+    },
+    "validation": {
+			"required": "Enter an email address",
+			"email": "Enter a valid email address"
+		}
   },
   "contact-email": {
     "label": "Email address"
   },
   "contact-phone": {
-    "label": "Phone number"
+    "label": "Telephone number",
+    "hint": "For international numbers include the country code"
   },
   "contact-text": {
     "label": "Text message"
