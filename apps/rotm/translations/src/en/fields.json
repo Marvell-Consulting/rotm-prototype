@@ -6,29 +6,6 @@
       "required": "Tell us where you found the material"
     }
   },
-  "source-website": {
-    "label": "Where did you find the material?",
-    "options": {
-      "facebook": {
-        "label": "Facebook"
-      },
-      "twitter": {
-        "label": "Twitter"
-      },
-      "youtube": {
-        "label": "YouTube"
-      },
-      "whatsapp": {
-        "label": "WhatsApp"
-      },
-      "linkedin": {
-        "label": "LinkedIn"
-      },
-      "somewhere-else": {
-        "label": "Somewhere else"
-      }
-    }
-  },
 
   "report-reason": {
     "label": "Reason for reporting"
