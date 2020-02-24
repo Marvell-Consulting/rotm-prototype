@@ -90,20 +90,6 @@ module.exports = {
     mixin: 'textarea'
   },
   'evidence-written': {
-    mixin: 'radio-group',
-    validate: 'required',
-    legend: {
-      className: 'visuallyhidden'
-    },
-     options: [{
-      value: 'yes',
-      toggle: 'yes-written',
-      child: 'textarea'
-    }, {
-      value: 'no'
-    }]
-  },
-  'yes-written': {
     mixin: 'textarea',
     attributes: [{
       attribute: 'rows',

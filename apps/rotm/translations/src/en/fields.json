@@ -7,10 +7,6 @@
     }
   },
 
-  "report-reason": {
-    "label": "Reason for reporting"
-  },
-
   "source-somewhere-else": {
     "label": "Where did you find the content?",
     "hint": "For example, name of the website or app"
@@ -101,16 +97,6 @@
     "label": "Paste or drag a file here"
   },
   "evidence-written": {
-    "options": {
-      "yes": {
-        "label": "Yes, I have more information"
-      },
-      "no": {
-        "label": "No, I’ve told you everything I can"
-      }
-    }
-  },
-  "yes-written": {
     "label": "Additional information"
   },
   "evidence-url": {
