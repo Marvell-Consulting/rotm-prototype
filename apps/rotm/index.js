@@ -17,12 +17,6 @@ module.exports = {
       fields: [
         'start'
       ],
-      next: '/source-website'
-    },
-    '/source-website': {
-      fields: [
-        'source-website'
-      ],
       next: '/material-type'
     },
     '/material-type': {

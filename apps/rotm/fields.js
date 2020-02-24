@@ -11,28 +11,6 @@ module.exports = {
   'more-info': {
     mixin: 'textarea'
   },
-  'source-website': {
-    mixin: 'radio-group',
-    validate: 'required',
-    legend: {
-      className: 'visuallyhidden'
-    },
-     options: [{
-      value: 'facebook',
-    }, {
-      value: 'twitter',
-    }, {
-      value: 'youtube',
-    }, {
-      value: 'whatsapp',
-    }, {
-      value: 'linkedin',
-    }, {
-      value: 'somewhere-else',
-      toggle: 'source-somewhere-else',
-      child: 'input-text'
-    }]
-  },
   'material-type': {
     mixin: 'radio-group',
     validate: 'required',
