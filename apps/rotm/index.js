@@ -23,13 +23,40 @@ module.exports = {
       fields: [
         'material-type'
       ],
-      next: '/report-reason'
+      next: '/evidence-url'
     },
-    '/report-reason': {
+    '/evidence-url': {
       fields: [
-        'report-reason'
+        'evidence-url'
       ],
-      next: '/evidence-upload'
+      next: '/evidence-upload',
+      continueOnEdit: true
+    },
+    '/evidence-upload': {
+      fields: [
+        'evidence-upload'
+      ],
+      // behaviours: [skipStep, saveImage, createThumbnail],
+      next: '/evidence-upload-confirm',
+      continueOnEdit: true
+    },
+    '/evidence-upload-confirm': {
+      forks: [{
+        target: '/evidence-upload',
+        condition: {
+          field: 'add-image',
+          value: 'no'
+        }
+      }],
+      next: '/evidence-written',
+      continueOnEdit: true
+    },
+    '/evidence-written': {
+      fields: [
+        'evidence-written',
+      ],
+      next: '/can-we-contact',
+      continueOnEdit: true
     },
     '/source': {
       fields: [
@@ -62,44 +89,11 @@ module.exports = {
       next: '/add-image',
       continueOnEdit: true
     },
-    '/evidence-upload': {
-      fields: [
-        'evidence-upload'
-      ],
-      // behaviours: [skipStep, saveImage, createThumbnail],
-      next: '/evidence-upload-confirm',
-      continueOnEdit: true
-    },
-    '/evidence-upload-confirm': {
-      forks: [{
-        target: '/evidence-upload',
-        condition: {
-          field: 'add-image',
-          value: 'no'
-        }
-      }],
-      next: '/evidence-url',
-      continueOnEdit: true
-    },
-    '/evidence-url': {
-      fields: [
-        'evidence-url'
-      ],
-      next: '/evidence-written',
-      continueOnEdit: true
-    },
     '/evidence-url-auto': {
       fields: [
         'evidence-url-auto'
       ],
       next: '/evidence-written',
-      continueOnEdit: true
-    },
-    '/evidence-written': {
-      fields: [
-        'evidence-written',
-      ],
-      next: '/can-we-contact',
       continueOnEdit: true
     },
     '/evidence-added-2': {
