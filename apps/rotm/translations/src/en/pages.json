@@ -24,7 +24,7 @@
     "link": "Continue without adding any evidence"
   },
   "evidence-upload": {
-    "header": "Can you send us some evidence?",
+    "header": "Do you have any evidence?",
     "summary": "This is helpful if the material gets deleted. Don’t worry about saving images to your device, it’s safe because you’re reporting them.",
     "link": "Continue without providing any evidence"
   },
@@ -35,7 +35,7 @@
   },
 
   "evidence-url": {
-    "header": "Is there a link you can share?",
+    "header": "Do you have a link to the material?",
     "summary": "It’s easier to find the material if you can provide a link to the page it appears on, or the post if it’s been posted on social media.",
     "link": "Continue without adding a url"
   },
@@ -65,7 +65,7 @@
     "header": "Who shared or promoted the material?"
   },
   "can-we-contact": {
-    "header": "Are you willing to be contacted?"
+    "header": "Are you willing to be contacted if necessary?"
   },
   "contact-details": {
     "header": "What are your contact details?"

@@ -7,4 +7,4 @@ Help save lives by reporting terrorist or extremist content. This includes:
 * speeches
 * videos
 
-Your report can be in any language and you can choose not to give your name or contact details. 
+Your report can be in any language. You do not have to give your name or contact details. 
