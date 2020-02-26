@@ -2,7 +2,7 @@
 {{$page-content}}
     
       <div class="image-wrapper">
-        <img src="{{assetPath}}/images/example.png" width="300px">
+        <img src="{{values.image-preview}}" width="300px">
       </div>
     {{#values.image}}
       <p>{{values.image}}</p>
@@ -17,7 +17,8 @@
       </summary>     
       <div class="govuk-details__text">
        
-          {{fields.image}}
+        
+       
       </div>
     </details>
     {{#input-submit}}continue{{/input-submit}}

@@ -36,7 +36,7 @@ module.exports = {
       fields: [
         'evidence-upload'
       ],
-      // behaviours: [skipStep, saveImage, createThumbnail],
+      behaviours: [skipStep, saveImage, createThumbnail],
       next: '/evidence-upload-confirm',
       continueOnEdit: true
     },
@@ -177,11 +177,9 @@ module.exports = {
           'yes-url',
           'evidence-written',
           'can-we-contact',
-          'contact-details-name',
+          'contact-details-name', 
           'contact-email',
           'contact-phone'
-          // 'contact-text'
-          // image preview is hardcoded in the page template
         ]
       },
       next: '/confirmation'
