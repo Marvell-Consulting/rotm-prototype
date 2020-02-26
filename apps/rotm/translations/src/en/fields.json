@@ -75,7 +75,7 @@
   "evidence-upload": {
     "options": {
       "yes": {
-        "label": "Yes, I have some evidence"
+        "label": "Yes, I have evidence"
       },
       "no": {
         "label": "No, I don’t have anything"
@@ -107,7 +107,7 @@
   },
 
   "evidence-written": {
-    "label": "Additional information"
+    "label": "Supporting information for our investigation"
   },
   "evidence-url": {
     "options": {
