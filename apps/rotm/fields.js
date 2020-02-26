@@ -105,13 +105,17 @@ module.exports = {
     options: [{
       value: 'yes',
       toggle: 'yes-url',
-      child: 'input-text'
+      child: 'textarea'
     }, {
       value: 'no'
     }],
   },
   'yes-url': {
-    mixin: 'input-text'
+    mixin: 'textarea',
+    attributes: [{
+      attribute: 'rows',
+      value: 1
+    }]
   },
   'evidence-url-auto': {
     mixin: 'radio-group',
