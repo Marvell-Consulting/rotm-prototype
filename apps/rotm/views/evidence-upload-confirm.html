@@ -7,7 +7,6 @@
     {{#values.image}}
       <p>{{values.image}}</p>
     {{/values.image}}
-    <p><a href="evidence-upload">No, let me choose another file</a></p>
     <details class="govuk-details" data-module="govuk-details">
       <summary class="govuk-details__summary">
         <span class="govuk-details__summary-text">
@@ -21,6 +20,7 @@
        
       </div>
     </details>
-    {{#input-submit}}continue{{/input-submit}}
+    <p><a href="evidence-upload">No, let me choose another file</a></p>
+    {{#input-submit}}correct-image{{/input-submit}}
   {{/page-content}}
 {{/partials-page}}
