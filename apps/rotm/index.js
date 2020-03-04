@@ -36,8 +36,23 @@ module.exports = {
       fields: [
         'evidence-upload'
       ],
+      forks: [
+        {
+          target: '/evidence-upload-confirm',
+          condition: {
+            field: 'evidence-upload',
+            value: 'yes'
+          }
+        },
+        {
+          target: '/evidence-written',
+          condition: {
+              field: 'evidence-upload',
+              value: 'no'
+          }
+        }
+    ],
       behaviours: [skipStep, saveImage, createThumbnail],
-      next: '/evidence-upload-confirm',
       continueOnEdit: true
     },
     '/evidence-upload-confirm': {
@@ -177,7 +192,7 @@ module.exports = {
           'yes-url',
           'evidence-written',
           'can-we-contact',
-          'contact-details-name', 
+          'contact-details-name',
           'contact-email',
           'contact-phone'
         ]

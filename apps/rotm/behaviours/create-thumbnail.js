@@ -14,7 +14,7 @@ module.exports = superclass => class extends superclass {
       if (err) {
         return next(err);
       }
-      if (req.files.image && req.files.image.data) {
+      if (req.files.image && req.files.image.data && req.form.values['evidence-upload'] === 'yes') {
         jimp.read(req.files.image.data)
           .then(image => {
             image.resize(200, jimp.AUTO);
@@ -29,6 +29,9 @@ module.exports = superclass => class extends superclass {
           })
           .then(() => next())
           .catch(next);
+      }
+      if (req.form.values['evidence-upload'] === 'no') {
+        next();
       }
     });
   }

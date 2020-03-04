@@ -18,7 +18,7 @@ module.exports = superclass => class extends superclass {
   }
 
   saveValues(req, res, next) {
-    if (req.files && req.files.image) {
+    if (req.files && req.files.image && req.form.values['evidence-upload'] === 'yes') {
       const model = new Model();
       const image = _.pick(req.files.image, ['name', 'data', 'mimetype']);
       model.set(image);
