@@ -93,7 +93,7 @@ module.exports = {
     mixin: 'textarea',
     attributes: [{
       attribute: 'rows',
-      value: 12
+      value: 8
     }]
   },
   'evidence-url': {
