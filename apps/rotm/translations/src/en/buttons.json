@@ -2,5 +2,6 @@
   "start": "Report in confidence",
   "send-report": "Send report",
   "add-image": "Add image",
-  "add-evidence": "Upload something"
+  "add-evidence": "Upload something",
+  "correct-image": "Yes, this is correct"
 }
