@@ -12,34 +12,6 @@
     "hint": "For example, name of the website or app"
   },
 
-  "material": {
-    "label": "What are you reporting?",
-    "hint": "Select all that apply",
-    "options": {
-      "image": {
-        "label": "Images"
-      },
-      "video": {
-        "label": "Videos"
-      },
-      "article": {
-        "label": "Articles or blogs"
-      },
-      "comment": {
-        "label": "Comments"
-      },
-      "speech": {
-        "label": "Speeches"
-      },
-      "something-else": {
-        "label": "Something else"
-      }
-    },
-    "validation": {
-      "required": "Select the reason for your complaint"
-    }
-  },
-
   "more-info": {
     "label": "Additional information (optional)"
   },
