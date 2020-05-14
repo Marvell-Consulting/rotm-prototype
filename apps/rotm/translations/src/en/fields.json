@@ -79,7 +79,7 @@
   },
 
   "evidence-written": {
-    "label": "Supporting information for our investigation"
+    "label": "Additional details"
   },
   "evidence-url": {
     "options": {
@@ -133,7 +133,7 @@
     }
   },
   "contact-details-method": {
-    "hint": "How would you prefer to be contacted?",
+    "hint": "How would you like to be contacted?",
     "options": {
       "email": {
         "label": "Email",
