@@ -11,21 +11,6 @@ module.exports = {
   'more-info': {
     mixin: 'textarea'
   },
-  'material': {
-    mixin: 'checkbox-group',
-    legend: {
-      className: 'visuallyhidden'
-    },
-    options: [
-      'image',
-      'video',
-      'article',
-      'comment',
-      'speech',
-      'something-else'
-    ],
-    validate: 'required'
-  },
   'report-reason': {
     mixin: 'textarea',
     legend: {

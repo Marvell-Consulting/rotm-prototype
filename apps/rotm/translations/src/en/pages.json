@@ -24,7 +24,7 @@
     "link": "Continue without adding any evidence"
   },
   "evidence-upload": {
-    "header": "Can you send us some evidence?",
+    "header": "Can you upload some evidence?",
     "summary": "This is helpful if the material gets deleted. Don’t worry about saving images to your device, it’s safe because you’re reporting them.",
     "link": "Continue without providing any evidence"
   },
@@ -35,8 +35,8 @@
   },
 
   "evidence-url": {
-    "header": "Is there a link you can share?",
-    "summary": "It’s easier to find the material if you can provide a link to the page it appears on, or the post if it’s been posted on social media.",
+    "header": "Can you share a link to the material?",
+    "summary": "It’s helpful if you can send us links to the relevant pages, or posts if it was posted on social media. ",
     "link": "Continue without adding a url"
   },
   "evidence-url-auto": {
@@ -44,7 +44,7 @@
     "summary": "We used the link you provided to take an image of the web page"
   },
   "evidence-written": {
-    "header": "Do you have any other information?",
+    "header": "Is there anything else you can tell us?",
     "summary": "Tell us what you found ",
     "link": "Continue without providing a written statement"
   },
@@ -65,14 +65,14 @@
     "header": "Who shared or promoted the material?"
   },
   "can-we-contact": {
-    "header": "Are you willing to be contacted?"
+    "header": "Are you willing to be contacted if necessary?"
   },
   "contact-details": {
     "header": "What are your contact details?"
   },
   "contact-details-method": {
-    "header": "How would you prefer to be contacted?",
-    "label": "How would you prefer to be contacted?"
+    "header": "How would you like to be contacted?",
+    "label": "How would you like to be contacted?"
   },
   "check-your-report": {
     "header": "Check your report"

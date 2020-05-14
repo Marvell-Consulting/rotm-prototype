@@ -17,12 +17,6 @@ module.exports = {
       fields: [
         'start'
       ],
-      next: '/material'
-    },
-    '/material': {
-      fields: [
-        'material'
-      ],
       next: '/evidence-url'
     },
     '/evidence-url': {
@@ -188,7 +182,6 @@ module.exports = {
       nullValue: 'pages.confirm.undefined',
       sections: {
         'summary': [
-          'material',
           'yes-url',
           'evidence-written',
           'can-we-contact',
