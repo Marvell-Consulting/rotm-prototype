@@ -96,7 +96,7 @@
   },
   "yes-url": {
     "label": "Link",
-    "hint": "For example, report-terrorism.gov.uk/page/1234"
+    "hint": "For example, www.gov.uk/page/1234/content#"
   },
   "add-image": {
     "legend": "Is this correct?",
