@@ -50,13 +50,9 @@ module.exports = {
       continueOnEdit: true
     },
     '/evidence-upload-confirm': {
-      forks: [{
-        target: '/evidence-upload',
-        condition: {
-          field: 'add-image',
-          value: 'no'
-        }
-      }],
+      fields: [
+        'evidence-upload-confirm',
+      ],
       next: '/evidence-written',
       continueOnEdit: true
     },

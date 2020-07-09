@@ -24,18 +24,18 @@
     "link": "Continue without adding any evidence"
   },
   "evidence-upload": {
-    "header": "Can you upload some evidence?",
+    "header": "Do you have any evidence?",
     "summary": "This is helpful if the material gets deleted. Don’t worry about saving images to your device, it’s safe because you’re reporting them.",
     "link": "Continue without providing any evidence"
   },
   "evidence-upload-confirm": {
-    "header": "Is this correct?",
+    "header": "Do you want to upload another file?",
     "summary": "This is helpful if the material gets deleted. Don’t worry about saving images to your device, it’s safe because you’re reporting them.",
     "link": "Continue without providing any evidence"
   },
 
   "evidence-url": {
-    "header": "Can you share a link to the material?",
+    "header": "Do you have a link to the material?",
     "summary": "It’s helpful if you can send us links to the relevant pages, or posts if it was posted on social media. ",
     "link": "Continue without adding a url"
   },
@@ -65,7 +65,7 @@
     "header": "Who shared or promoted the material?"
   },
   "can-we-contact": {
-    "header": "Are you willing to be contacted if necessary?"
+    "header": "Are you willing to be contacted, if necessary?"
   },
   "contact-details": {
     "header": "What are your contact details?"

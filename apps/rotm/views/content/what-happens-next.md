@@ -4,6 +4,6 @@ The Counter-Terrorism Internet Referral Unit will investigate your report and ta
 
 ###Removing evidence from your device
 
-You don't need to keep any copies of the evidence. We suggest you delete them now. 
+You don't need to keep any copies of the evidence. They can now be deleted.  
 
 Thank you for your report.

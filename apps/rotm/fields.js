@@ -59,6 +59,20 @@ module.exports = {
       value: 'no'
     }]
   },
+  'evidence-upload-confirm': {
+    mixin: 'radio-group',
+    validate: 'required',
+    legend: {
+      className: 'visuallyhidden'
+    },
+    options: [{
+      value: 'yes',
+      toggle: 'image',
+      child: 'input-file'
+    }, {
+      value: 'no'
+    }]
+  },
   'image': {
     mixin: 'input-file',
     validate: [function extname(value) {

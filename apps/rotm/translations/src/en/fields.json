@@ -57,6 +57,19 @@
       "required": "Select whether you have some evidence you can share"
     }
   },
+  "evidence-upload-confirm": {
+    "options": {
+      "yes": {
+        "label": "Yes"
+      },
+      "no": {
+        "label": "No"
+      }
+    },
+    "validation": {
+      "required": "Select whether you have some evidence you can share"
+    }
+  },
   "evidence-url-auto": {
     "options": {
       "yes": {
@@ -119,11 +132,11 @@
         "label": "Yes, I’ll give my contact details"
       },
       "no": {
-        "label": "No, I’d like to remain anonymous"
+        "label": "No, I don’t want to be contacted"
       }
     },
     "validation": {
-      "required": "Tell us if you want to add your contact details"
+      "required": "Select whether or not you’re willing to share your contact details"
     }
   },
   "contact-details-name": {
@@ -136,26 +149,29 @@
     "hint": "How would you like to be contacted?",
     "options": {
       "email": {
-        "label": "Email",
-        "validation": {
-          "required": "Enter your full name"
-        }
+        "label": "Email address",
       },
       "phone": {
-        "label": "Telephone"
+        "label": "Telephone number"
       }
     },
     "validation": {
-			"required": "Enter an email address",
-			"email": "Enter a valid email address"
+			"required": "Select how you would like to be contacted"
 		}
   },
   "contact-email": {
-    "label": "Email address"
+    "label": "Email address",
+    "validation": {
+			"required": "Enter an email we can contact you on",
+			"email": "Enter an email address in the correct format, like name@example.com"
+		}
   },
   "contact-phone": {
     "label": "Telephone number",
-    "hint": "For international numbers include the country code"
+    "hint": "For international numbers include the country code",
+    "validation": {
+			"required": "Enter a phone number we can contact you on"
+		}
   },
   "contact-text": {
     "label": "Text message"

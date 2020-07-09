@@ -2,24 +2,9 @@
   {{$encoding}}enctype="multipart/form-data"{{/encoding}}
   {{$page-content}}
     <p>This could be an image or video, for example. Evidence is helpful if the material gets deleted. </p> 
-    <p>It’s safe to save images to your device because you’re reporting them. </p> 
+    <p>It’s safe to save evidence to your device for the purpose of reporting it to us. We recommend deleting it afterwards.</p> 
     {{>partials-help-screenshots-phone}}
-   <!--  {{>partials-help-screenshots-desktop}} -->
-    <!-- {{#markdown}}image{{/markdown}} -->
-    
-<!--      <label>Paste or drag something here</label><br>
-    <input type="text" name="">
-    <br>
-    <p>or</p> -->
-    <!-- <div class="file-upload">
-      <input name="image" id="file-upload" type="file" accept=".png, .jpg, .jpeg">
-      {{#input-submit}}submit image-submit{{/input-submit}}
-    </div>
-      <input type="text" class="form-control" value="Paste or drag something here" name="">
-      <p>or</p>
-    <button type="button" id="add-image-button" class="button visuallyhidden" tabindex="-1">{{#t}}buttons.add-evidence{{/t}}</button>
-    <br>
-    <br> -->
+
     {{#fields}}
       {{#renderField}}{{/renderField}}
     {{/fields}}
