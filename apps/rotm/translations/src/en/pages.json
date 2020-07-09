@@ -2,27 +2,6 @@
   "start": {
     "header": "Report online material promoting terrorism or extremism"
   },
-  "source": {
-    "header": "Where did you find the material?"
-  },
-  "more-info": {
-    "header": "Can you tell us more about the material?",
-    "intro": "So we can find it, please provide any information you think is helpful. You can provide a screenshot or photo on the next page.",
-    "summary": "Information that can help us"
-  },
-  "report-reason": {
-    "header": "Why are you reporting it?",
-    "summary": "Explain what the material is and why it’s offensive."
-  },
-  "image": {
-    "header": "Do you want to add a photo or screenshot?",
-    "link": "Continue without adding an image"
-  },
-  "evidence": {
-    "header": "Can you provide some evidence?",
-    "summary": "This is helpful if the material gets deleted. Don’t worry about saving images to your device, it’s safe because you’re reporting them. ",
-    "link": "Continue without adding any evidence"
-  },
   "evidence-upload": {
     "header": "Do you have any evidence?",
     "summary": "This is helpful if the material gets deleted. Don’t worry about saving images to your device, it’s safe because you’re reporting them.",
@@ -33,36 +12,15 @@
     "summary": "This is helpful if the material gets deleted. Don’t worry about saving images to your device, it’s safe because you’re reporting them.",
     "link": "Continue without providing any evidence"
   },
-
   "evidence-url": {
     "header": "Do you have a link to the material?",
     "summary": "It’s helpful if you can send us links to the relevant pages, or posts if it was posted on social media. ",
     "link": "Continue without adding a url"
   },
-  "evidence-url-auto": {
-    "header": "Is this the material?",
-    "summary": "We used the link you provided to take an image of the web page"
-  },
   "evidence-written": {
     "header": "Is there anything else you can tell us?",
     "summary": "Tell us what you found ",
     "link": "Continue without providing a written statement"
-  },
-  "evidence-added-2": {
-    "header": "Can you provide a photo or other evidence?",
-    "summary": "This is helpful if the material gets deleted. Don’t worry about saving images to your device, it’s safe because you’re reporting them. ",
-    "link": "Continue without adding any evidence"
-  },
-  "video": {
-    "header": "Can you provide a copy of the video?",
-    "summary": "This is helpful if the material gets deleted.",
-    "link": "Continue without adding a video"
-  },
-  "add-image": {
-    "header": "Is this correct?"
-  },
-  "who-shared": {
-    "header": "Who shared or promoted the material?"
   },
   "can-we-contact": {
     "header": "Are you willing to be contacted, if necessary?"

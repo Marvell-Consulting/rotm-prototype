@@ -1,20 +1,4 @@
 {
-  "source": {
-    "label": "Link or website",
-    "hint": "For example, 'https://www.gov.uk/report-terrorism' or 'Facebook'",
-    "validation": {
-      "required": "Tell us where you found the material"
-    }
-  },
-
-  "source-somewhere-else": {
-    "label": "Where did you find the content?",
-    "hint": "For example, name of the website or app"
-  },
-
-  "more-info": {
-    "label": "Additional information (optional)"
-  },
   "image": {
     "label": "Select or drag an image here",
     "validation": {
@@ -22,27 +6,6 @@
       "extname": "Select a valid file type (jpg, jpeg, png)",
       "unsaved": "We have not been able to upload the photo or screenshot"
     }
-  },
-  "video": {
-    "options": {
-      "yes": {
-        "label": "Yes"
-      },
-      "no": {
-        "label": "No"
-      }
-    }
-  },
-  "video-upload": {
-    "label": "Upload your video"
-  },
-  "who-shared": {
-    "label": "Name",
-    "hint": "This is the name the person uses on [PLATFORM]"
-  },
-  "evidence-general": {
-    "label": "Any other useful info?",
-    "hint": "It’s helpful to know the names of people who shared or promoted the video or when the video was shared "
   },
   "evidence-upload": {
     "options": {
@@ -70,27 +33,9 @@
       "required": "Select whether you have some evidence you can share"
     }
   },
-  "evidence-url-auto": {
-    "options": {
-      "yes": {
-        "label": "Yes, this is the material"
-      },
-      "no": {
-        "label": "No, this isn’t right",
-        "hint": "You’ll be able to choose your own image instead"
-      }
-    },
-    "validation": {
-      "required": "Select the reason for your complaint"
-    }
-  },
-  "image-paste": {
-    "label": "or paste a file here"
-  },
   "yes-upload": {
     "label": "Paste or drag a file here"
   },
-
   "evidence-written": {
     "label": "Additional details"
   },
@@ -110,20 +55,6 @@
   "yes-url": {
     "label": "Link",
     "hint": "For example, www.gov.uk/page/1234/content#"
-  },
-  "add-image": {
-    "legend": "Is this correct?",
-    "options": {
-      "yes": {
-        "label": "Yes, add this image"
-      },
-      "no": {
-        "label": "No, I want to change the image"
-      }
-    },
-    "validation": {
-      "required": "Tell us if you want to add this image"
-    }
   },
   "can-we-contact": {
     "label": "Can we contact you?",
@@ -149,7 +80,7 @@
     "hint": "How would you like to be contacted?",
     "options": {
       "email": {
-        "label": "Email address",
+        "label": "Email address"
       },
       "phone": {
         "label": "Telephone number"
@@ -172,23 +103,5 @@
     "validation": {
 			"required": "Enter a phone number we can contact you on"
 		}
-  },
-  "contact-text": {
-    "label": "Text message"
-  },
-  "send-copy": {
-    "legend": " ",
-    "options": {
-      "yes": {
-        "label": "Email me a copy of my report"
-      },
-      "no": {
-        "label": "No"
-      }
-    }
-  },
-  "send-copy-email": {
-    "label": "Email address"
   }
-
 }
