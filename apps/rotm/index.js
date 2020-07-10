@@ -111,6 +111,13 @@ module.exports = {
     },
     '/confirmation': {
       backLink: false
+    },
+    '/404': {
+      backLink: false
+    },
+    '/timeout': {
+      backLink: false,
+      next: '/evidence-url'
     }
   }
 };
