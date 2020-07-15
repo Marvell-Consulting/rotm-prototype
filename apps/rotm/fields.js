@@ -49,8 +49,9 @@ module.exports = {
   },
   'image': {
     mixin: 'input-file',
-    validate: [function extname(value) {
-      return extensions.includes(path.extname(value));
+    disableRender: true,
+    validate: ['required', function extname(value) {
+      return value && extensions.includes(path.extname(value));
     }]
   },
   'evidence-written': {
@@ -76,6 +77,8 @@ module.exports = {
   },
   'yes-url': {
     mixin: 'textarea',
+    validate: 'required',
+    disableRender: true,
     attributes: [{
       attribute: 'rows',
       value: 1
