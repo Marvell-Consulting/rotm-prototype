@@ -1,79 +1,59 @@
-{{$content-outer}}
-   <details class="govuk-details" data-module="govuk-details">
-      <summary class="govuk-details__summary">
-        <span class="govuk-details__summary-text">
-          Help me take a screenshot
+<div class="govuk-details__text">
+  <div class="govuk-tabs" data-module="govuk-tabs">
+    <ul class="govuk-tabs__list">
+      <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+        <a class="govuk-tabs__tab" href="#computer-mac">
+          Mac
+        </a>
+      </li>
+      <li class="govuk-tabs__list-item">
+        <a class="govuk-tabs__tab" href="#computer-chromebook">
+          Chromebook
+        </a>
+      </li>
+      <li class="govuk-tabs__list-item">
+        <a class="govuk-tabs__tab" href="#computer-other">
+          All other computers
+        </a>
+      </li>
 
-        </span>
-      </summary>     
-      <div class="govuk-details__text">
-        <div class="govuk-tabs" data-module="govuk-tabs">
-          <ul class="govuk-tabs__list">
-            <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-              <a class="govuk-tabs__tab" href="#computer-mac"  style="font-size: 24px;">
-                Mac
-              </a>
-            </li>
-            <li class="govuk-tabs__list-item">
-              <a class="govuk-tabs__tab" href="#computer-chromebook">
-                Chromebook
-              </a>
-            </li>
-            <li class="govuk-tabs__list-item">
-              <a class="govuk-tabs__tab" href="#computer-other">
-                All other compters
-              </a>
-            </li>
-            
-          </ul>
-          <section class="govuk-tabs__panel" id="computer-mac">
-            <p>Try this:</p>
-            <ul class="govuk-list--numeber">
-              <li>Press the <strong> Shift</strong> key (⇧), <strong>command</strong> (or Cmd), and <strong>3</strong> </li>
-              <li>The screenshot will be saved to your <strong>Desktop</strong> </li>
-              <li>You can now upload it to the form </li>
-            </ul>
-            <p><a href="https://support.apple.com/en-us/HT201361">Get more help from Apple </a></p>
-          </section>
+    </ul>
+    <section class="govuk-tabs__panel" id="computer-mac">
+      <p>Try this:</p>
+      <ul class="govuk-list--numeber">
+        <li>Press the <strong> Shift</strong> key (⇧), <strong>command</strong> (or Cmd), and <strong>3</strong> </li>
+        <li>The screenshot will be saved to your <strong>Desktop</strong> </li>
+        <li>You can now upload it to the form </li>
+      </ul>
+      <p><a href="https://support.apple.com/en-us/HT201361">Get more help from Apple </a></p>
+    </section>
 
-          <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="computer-chromebook">
-            <p>Try this:</p>
-            <ul class="govuk-list--numeber">
-              <li>Press the <strong>Ctrl</strong> key and the <strong>switch window</strong> key</li>
-              <li>The screenshot will be saved to your <strong>Downloads</strong></li>
-              <li>You can now upload it to the form</li>
-            </ul>
-            <p>If that doesn’t work, try pressing <strong>Ctrl</strong> and <strong>F5</strong>.</p>
-            <p><a href="https://www.androidcentral.com/how-take-screenshot-chromebook">Get more help from Android Central</a></p>
-          </section>
-          
-          <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="computer-other">
-            <p>Try this:</p>
-            <ul class="govuk-list--numeber">
-              <li>Press the <strong>Prt Scr</strong> key (or similar) to take a copy of your screen</li>
-              <li>Click into the box below</li>
-              <li>Press <strong>ctrl</strong> and <strong>V</strong> to paste the image into the box</li>
-            </ul>
-            <p>If that doesn’t work, try one of thes:.</p>
-            <ul class="govuk-list--numeber">
-              <li>Pressing <strong>Prt Scr</strong> and <strong>Windows logo</strong> together</li>
-              <li>Pressing <strong>Prt Scr</strong>, <strong>Windows logo</strong> and <strong>Fn</strong> together</li>
-              <li>Pressing <strong>Prt Scr</strong>, <strong>Alt</strong> and <strong>Fn</strong> together</li>
-            </ul>
-            <p>Then paste the image into the box below.</p>
-            <p>On some computers, the image may be saved to a folder called Screenshots in your Pictures. </p>
-          </section>  
-        </div>
+    <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="computer-chromebook">
+      <p>Try this:</p>
+      <ul class="govuk-list--numeber">
+        <li>Press the <strong>Ctrl</strong> key and the <strong>switch window</strong> key</li>
+        <li>The screenshot will be saved to your <strong>Downloads</strong></li>
+        <li>You can now upload it to the form</li>
+      </ul>
+      <p>If that doesn’t work, try pressing <strong>Ctrl</strong> and <strong>F5</strong>.</p>
+      <p><a href="https://www.androidcentral.com/how-take-screenshot-chromebook">Get more help from Android Central</a></p>
+    </section>
 
-        
-      </div>
-    </details>
-
-
-
-
-
-
-
-
-{{/content-outer}}
+    <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="computer-other">
+      <p>Try this:</p>
+      <ul class="govuk-list--numeber">
+        <li>Press the <strong>Prt Scr</strong> key (or similar) to take a copy of your screen</li>
+        <li>Click into the box below</li>
+        <li>Press <strong>ctrl</strong> and <strong>V</strong> to paste the image into the box</li>
+      </ul>
+      <p>If that doesn’t work, try one of thes:.</p>
+      <ul class="govuk-list--numeber">
+        <li>Pressing <strong>Prt Scr</strong> and <strong>Windows logo</strong> together</li>
+        <li>Pressing <strong>Prt Scr</strong>, <strong>Windows logo</strong> and <strong>Fn</strong> together</li>
+        <li>Pressing <strong>Prt Scr</strong>, <strong>Alt</strong> and <strong>Fn</strong> together</li>
+      </ul>
+      <p>Then paste the image into the box below.</p>
+      <p>On some computers, the image may be saved to a folder called Screenshots in your Pictures. </p>
+    </section>
+  </div>
+</div>

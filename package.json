@@ -23,6 +23,7 @@
   "author": "HomeOffice",
   "dependencies": {
     "busboy-body-parser": "^0.3.1",
+    "device": "^0.3.11",
     "express": "^4.16.2",
     "govuk-frontend": "^3.5.0",
     "hof": "^13.2.1",
