@@ -83,7 +83,9 @@ module.exports = {
     '/contact-details': {
       fields: [
         'contact-details-name',
-        'contact-details-method'
+        'contact-details-method',
+        'contact-email',
+        'contact-phone'
       ],
       next: '/check-your-report'
     },
