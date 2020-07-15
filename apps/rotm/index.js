@@ -4,6 +4,7 @@ const skipStep = require('./behaviours/skip-step');
 const saveImage = require('./behaviours/save-image');
 const removeImage = require('./behaviours/remove-image');
 const createThumbnail = require('./behaviours/create-thumbnail');
+const checkDeviceType = require('./behaviours/check-device-type');
 const config = require('../../config');
 const caseworkerEmailer = require('./behaviours/caseworker-email')(config.email);
 const checkReportBackLink = require('./behaviours/check-report-back-link');
@@ -46,7 +47,7 @@ module.exports = {
           }
         }
     ],
-      behaviours: [skipStep, saveImage, createThumbnail],
+      behaviours: [skipStep, saveImage, createThumbnail, checkDeviceType],
       continueOnEdit: true
     },
     '/evidence-upload-confirm': {
