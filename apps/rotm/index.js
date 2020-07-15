@@ -22,6 +22,7 @@ module.exports = {
     },
     '/evidence-url': {
       fields: [
+        'yes-url',
         'evidence-url'
       ],
       next: '/evidence-upload',
@@ -29,6 +30,7 @@ module.exports = {
     },
     '/evidence-upload': {
       fields: [
+        'image',
         'evidence-upload'
       ],
       forks: [
