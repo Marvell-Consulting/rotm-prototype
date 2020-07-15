@@ -50,6 +50,10 @@ module.exports = {
   'image': {
     mixin: 'input-file',
     disableRender: true,
+    dependent: {
+      field: 'evidence-upload',
+      value: 'yes'
+    },
     validate: ['required', function extname(value) {
       return value && extensions.includes(path.extname(value));
     }]
@@ -79,6 +83,10 @@ module.exports = {
     mixin: 'textarea',
     validate: 'required',
     disableRender: true,
+    dependent: {
+      field: 'evidence-url',
+      value: 'yes'
+    },
     attributes: [{
       attribute: 'rows',
       value: 1
@@ -106,5 +114,21 @@ module.exports = {
       toggle: 'contact-phone',
       child: 'input-text'
     }]
+  },
+  'contact-email': {
+    disableRender: true,
+    dependent: {
+      field: 'contact-details-method',
+      value: 'email'
+    },
+    validate: 'required'
+  },
+  'contact-phone': {
+    disableRender: true,
+    dependent: {
+      field: 'contact-details-method',
+      value: 'phone'
+    },
+    validate: 'required'
   }
 };
