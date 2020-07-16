@@ -1,16 +1,23 @@
 {{<partials-page}}
-{{$page-content}}
-{{#fields}}
-{{#renderField}}{{/renderField}}
-{{/fields}}    
+  {{$encoding}}enctype="multipart/form-data"{{/encoding}}
+  {{$page-content}}
+    {{#fields}}
+      {{#renderField}}{{/renderField}}
+    {{/fields}}
 
-{{#input-submit}}continue{{/input-submit}}
-<h2 class="govuk-heading-m">Files added</h2> 
-{{#values.image}}
-<p>{{values.image}}</p>
-{{/values.image}}
-<div class="image-wrapper">
-  <img src="{{values.image-preview}}" width="300px">
-</div>
+    {{#input-submit}}continue{{/input-submit}}
+
+    {{^values.images}}
+    <h2 class="govuk-heading-m">No files added</h2>
+    {{/values.images}}
+    {{#values.images.length}}
+    <h2 class="govuk-heading-m">Files added</h2>
+    {{/values.images.length}}
+    {{#values.images}}
+      <p>{{name}} - <a href="?delete={{id}}">Delete</a></p>
+      <div class="image-wrapper">
+        <img src="{{thumbnail}}" width="300px">
+      </div>
+    {{/values.images}}
   {{/page-content}}
 {{/partials-page}}

@@ -2,9 +2,18 @@
 
 const url = require('url');
 const Model = require('hof-model');
+const jimp = require('jimp');
+const uuid = require('uuid').v4;
+
 const config = require('../../../config');
 
 module.exports = class UploadModel extends Model {
+
+  constructor(...args) {
+    super(...args);
+    this.set('id', uuid());
+  }
+
   save() {
     return new Promise((resolve, reject) => {
       const attributes = {
@@ -27,7 +36,31 @@ module.exports = class UploadModel extends Model {
         }
         resolve(data);
       });
+    })
+    .then(result => {
+      return this.set({ url: result.url });
+    })
+    .then(() => {
+      return this.thumbnail();
+    })
+    .then(() => {
+      return this.unset('data');
     });
+  }
+
+  thumbnail() {
+    return jimp.read(this.get('data'))
+      .then(image => {
+        image.resize(200, jimp.AUTO);
+        return new Promise((resolve, reject) => {
+          image.getBase64(this.get('mimetype'), (e, data) => {
+            return e ? reject(e) : resolve(data);
+          });
+        });
+      })
+      .then(data => {
+        this.set('thumbnail', data);
+      });
   }
 
   auth() {

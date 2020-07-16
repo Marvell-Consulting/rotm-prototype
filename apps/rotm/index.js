@@ -1,11 +1,11 @@
  'use strict';
 
+const config = require('../../config');
 const skipStep = require('./behaviours/skip-step');
 const saveImage = require('./behaviours/save-image');
 const removeImage = require('./behaviours/remove-image');
-const createThumbnail = require('./behaviours/create-thumbnail');
+const unsetValue = require('./behaviours/unset-value');
 const checkDeviceType = require('./behaviours/check-device-type');
-const config = require('../../config');
 const caseworkerEmailer = require('./behaviours/caseworker-email')(config.email);
 const checkReportBackLink = require('./behaviours/check-report-back-link');
 
@@ -48,15 +48,32 @@ module.exports = {
               value: 'no'
           }
         }
-    ],
-      behaviours: [skipStep, saveImage, createThumbnail, checkDeviceType],
+      ],
+      behaviours: [skipStep, saveImage('image'), checkDeviceType],
       continueOnEdit: true
     },
     '/evidence-upload-confirm': {
       fields: [
-        'evidence-upload-confirm',
+        'evidence-upload-more',
+        'another-image'
       ],
-      next: '/evidence-written',
+      forks: [
+        {
+          target: '/evidence-upload-confirm',
+          condition: {
+            field: 'evidence-upload-more',
+            value: 'yes'
+          }
+        },
+        {
+          target: '/evidence-written',
+          condition: {
+              field: 'evidence-upload-more',
+              value: 'no'
+          }
+        }
+      ],
+      behaviours: [saveImage('another-image'), removeImage, unsetValue('evidence-upload-more')],
       continueOnEdit: true
     },
     '/evidence-written': {

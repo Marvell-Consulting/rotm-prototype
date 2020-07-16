@@ -7,6 +7,14 @@
       "unsaved": "We have not been able to upload the photo or screenshot"
     }
   },
+  "another-image": {
+    "label": "Select or drag an image here",
+    "validation": {
+      "required": "Select an image",
+      "extname": "Select a valid file type (jpg, jpeg, png)",
+      "unsaved": "We have not been able to upload the photo or screenshot"
+    }
+  },
   "evidence-upload": {
     "options": {
       "yes": {
@@ -20,7 +28,7 @@
       "required": "Select whether you have some evidence you can share"
     }
   },
-  "evidence-upload-confirm": {
+  "evidence-upload-more": {
     "options": {
       "yes": {
         "label": "Yes"
@@ -30,7 +38,7 @@
       }
     },
     "validation": {
-      "required": "Select whether you have some evidence you can share"
+      "required": "Select whether you have any more evidence you can share"
     }
   },
   "yes-upload": {

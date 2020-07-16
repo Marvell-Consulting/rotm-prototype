@@ -2,7 +2,9 @@
 
 const path = require('path');
 
-const extensions = ['.png', '.jpg', '.jpeg'];
+function extname(value) {
+  return value && ['.png', '.jpg', '.jpeg'].includes(path.extname(value));
+}
 
 module.exports = {
   source: {
@@ -33,7 +35,7 @@ module.exports = {
       value: 'no'
     }]
   },
-  'evidence-upload-confirm': {
+  'evidence-upload-more': {
     mixin: 'radio-group',
     validate: 'required',
     legend: {
@@ -41,7 +43,7 @@ module.exports = {
     },
     options: [{
       value: 'yes',
-      toggle: 'image',
+      toggle: 'another-image',
       child: 'input-file'
     }, {
       value: 'no'
@@ -54,9 +56,22 @@ module.exports = {
       field: 'evidence-upload',
       value: 'yes'
     },
-    validate: ['required', function extname(value) {
-      return value && extensions.includes(path.extname(value));
-    }]
+    validate: [
+      'required',
+      extname
+    ]
+  },
+  'another-image': {
+    mixin: 'input-file',
+    disableRender: true,
+    dependent: {
+      field: 'evidence-upload-more',
+      value: 'yes'
+    },
+    validate: [
+      'required',
+      extname
+    ]
   },
   'evidence-written': {
     mixin: 'textarea',
