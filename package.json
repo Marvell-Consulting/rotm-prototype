@@ -14,8 +14,6 @@
     "dev": "NODE_ENV=development hof-build watch --env",
     "test": "npm run test:unit && npm run lint",
     "test:unit": "mocha",
-    "test:acceptance": "so-acceptance --steps",
-    "test:acceptance:local": "funkie --driver chromedriver npm run test:acceptance",
     "lint": "eslint .",
     "build": "hof-build",
     "postinstall": "npm run build"
