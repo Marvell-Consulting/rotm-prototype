@@ -42,12 +42,9 @@
     "chai-as-promised": "^7.1.1",
     "eslint": "^4.11.0",
     "eslint-config-homeoffice": "^2.2.0",
-    "funkie": "0.0.6",
-    "funkie-chromedriver": "0.0.1",
     "hof-util-reqres": "^1.1.0",
     "mock-fs": "^4.4.2",
     "sinon": "^4.1.2",
-    "sinon-chai": "^2.14.0",
-    "so-acceptance": "^5.1.0"
+    "sinon-chai": "^2.14.0"
   }
 }
