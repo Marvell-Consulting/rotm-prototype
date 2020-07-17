@@ -18,13 +18,13 @@ module.exports = {
     },
     options: [{
       value: 'yes',
-      toggle: 'yes-url',
+      toggle: 'url',
       child: 'textarea'
     }, {
       value: 'no'
     }],
   },
-  'yes-url': {
+  'url': {
     mixin: 'textarea',
     validate: 'required',
     disableRender: true,

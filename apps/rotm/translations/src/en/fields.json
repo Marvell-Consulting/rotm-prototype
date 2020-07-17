@@ -60,7 +60,7 @@
       "required": "Select whether you have a link to the material or not"
     }
   },
-  "yes-url": {
+  "url": {
     "label": "Link",
     "hint": "For example, www.gov.uk/page/1234/content#"
   },

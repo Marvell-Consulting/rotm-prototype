@@ -22,7 +22,7 @@ module.exports = {
     },
     '/evidence-url': {
       fields: [
-        'yes-url',
+        'url',
         'evidence-url'
       ],
       next: '/evidence-upload',
@@ -115,7 +115,7 @@ module.exports = {
       nullValue: 'pages.confirm.undefined',
       sections: {
         summary: [
-          'yes-url',
+          'url',
           'evidence-written',
           'can-we-contact'
         ],
