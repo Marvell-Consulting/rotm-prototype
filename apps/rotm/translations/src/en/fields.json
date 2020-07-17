@@ -88,10 +88,10 @@
     "hint": "How would you like to be contacted?",
     "options": {
       "email": {
-        "label": "Email address"
+        "label": "Email"
       },
       "phone": {
-        "label": "Telephone number"
+        "label": "Telephone"
       }
     },
     "validation": {
@@ -111,5 +111,8 @@
     "validation": {
 			"required": "Enter a phone number we can contact you on"
 		}
+  },
+  "images": {
+    "label": "Image"
   }
 }

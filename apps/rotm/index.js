@@ -7,7 +7,7 @@ const removeImage = require('./behaviours/remove-image');
 const unsetValue = require('./behaviours/unset-value');
 const checkDeviceType = require('./behaviours/check-device-type');
 const caseworkerEmailer = require('./behaviours/caseworker-email')(config.email);
-const checkReportBackLink = require('./behaviours/check-report-back-link');
+const checkReport = require('./behaviours/check-report');
 
 module.exports = {
   name: 'rotm',
@@ -73,15 +73,13 @@ module.exports = {
           }
         }
       ],
-      behaviours: [saveImage('another-image'), removeImage, unsetValue('evidence-upload-more')],
-      continueOnEdit: true
+      behaviours: [saveImage('another-image'), removeImage, unsetValue('evidence-upload-more')]
     },
     '/evidence-written': {
       fields: [
         'evidence-written',
       ],
-      next: '/can-we-contact',
-      continueOnEdit: true
+      next: '/can-we-contact'
     },
     '/can-we-contact': {
       fields: [
@@ -95,7 +93,7 @@ module.exports = {
         }
       }],
       next: '/check-your-report',
-      // continueOnEdit: true
+      continueOnEdit: true
     },
     '/contact-details': {
       fields: [
@@ -107,23 +105,21 @@ module.exports = {
       next: '/check-your-report'
     },
     '/check-your-report': {
-      fields: [
-        'send-copy'
-      ],
       prereqs: ['/image'],
       behaviours: [
         require('hof-behaviour-summary-page'),
         'complete',
         caseworkerEmailer,
-        checkReportBackLink,
-        removeImage
+        checkReport
       ],
       nullValue: 'pages.confirm.undefined',
       sections: {
-        'summary': [
+        summary: [
           'yes-url',
           'evidence-written',
-          'can-we-contact',
+          'can-we-contact'
+        ],
+        contact: [
           'contact-details-name',
           'contact-email',
           'contact-phone'
@@ -133,13 +129,6 @@ module.exports = {
     },
     '/confirmation': {
       backLink: false
-    },
-    '/404': {
-      backLink: false
-    },
-    '/timeout': {
-      backLink: false,
-      next: '/evidence-url'
     }
   }
 };

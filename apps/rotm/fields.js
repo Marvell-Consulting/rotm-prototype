@@ -10,76 +10,6 @@ module.exports = {
   source: {
     validate: 'required'
   },
-  'can-we-contact': {
-    mixin: 'radio-group',
-    validate: 'required',
-    legend: {
-      className: 'visuallyhidden'
-    },
-    options: [
-      'yes',
-      'no'
-    ]
-  },
-  'evidence-upload': {
-    mixin: 'radio-group',
-    validate: 'required',
-    legend: {
-      className: 'visuallyhidden'
-    },
-    options: [{
-      value: 'yes',
-      toggle: 'image',
-      child: 'input-file'
-    }, {
-      value: 'no'
-    }]
-  },
-  'evidence-upload-more': {
-    mixin: 'radio-group',
-    validate: 'required',
-    legend: {
-      className: 'visuallyhidden'
-    },
-    options: [{
-      value: 'yes',
-      toggle: 'another-image',
-      child: 'input-file'
-    }, {
-      value: 'no'
-    }]
-  },
-  'image': {
-    mixin: 'input-file',
-    disableRender: true,
-    dependent: {
-      field: 'evidence-upload',
-      value: 'yes'
-    },
-    validate: [
-      'required',
-      extname
-    ]
-  },
-  'another-image': {
-    mixin: 'input-file',
-    disableRender: true,
-    dependent: {
-      field: 'evidence-upload-more',
-      value: 'yes'
-    },
-    validate: [
-      'required',
-      extname
-    ]
-  },
-  'evidence-written': {
-    mixin: 'textarea',
-    attributes: [{
-      attribute: 'rows',
-      value: 8
-    }]
-  },
   'evidence-url': {
     mixin: 'radio-group',
     validate: 'required',
@@ -107,6 +37,76 @@ module.exports = {
       value: 1
     }]
   },
+  'evidence-upload': {
+    mixin: 'radio-group',
+    validate: 'required',
+    legend: {
+      className: 'visuallyhidden'
+    },
+    options: [{
+      value: 'yes',
+      toggle: 'image',
+      child: 'input-file'
+    }, {
+      value: 'no'
+    }]
+  },
+  'image': {
+    mixin: 'input-file',
+    disableRender: true,
+    dependent: {
+      field: 'evidence-upload',
+      value: 'yes'
+    },
+    validate: [
+      'required',
+      extname
+    ]
+  },
+  'evidence-upload-more': {
+    mixin: 'radio-group',
+    validate: 'required',
+    legend: {
+      className: 'visuallyhidden'
+    },
+    options: [{
+      value: 'yes',
+      toggle: 'another-image',
+      child: 'input-file'
+    }, {
+      value: 'no'
+    }]
+  },
+  'another-image': {
+    mixin: 'input-file',
+    disableRender: true,
+    dependent: {
+      field: 'evidence-upload-more',
+      value: 'yes'
+    },
+    validate: [
+      'required',
+      extname
+    ]
+  },
+  'evidence-written': {
+    mixin: 'textarea',
+    attributes: [{
+      attribute: 'rows',
+      value: 8
+    }]
+  },
+  'can-we-contact': {
+    mixin: 'radio-group',
+    validate: 'required',
+    legend: {
+      className: 'visuallyhidden'
+    },
+    options: [
+      'yes',
+      'no'
+    ]
+  },
   'contact-details-name': {
     mixin: 'input-text',
     legend: {
@@ -115,7 +115,7 @@ module.exports = {
     validate: 'required'
   },
   'contact-details-method': {
-    mixin: 'radio-group',
+    mixin: 'checkbox-group',
     validate: 'required',
     legend: {
       className: 'visuallyhidden'
