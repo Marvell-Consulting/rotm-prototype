@@ -11,6 +11,7 @@ module.exports = superclass => class extends superclass {
 
   locals(req, res) {
     res.locals.images = req.sessionModel.get('images');
+    res.locals.urls = req.sessionModel.get('urls');
     return super.locals(req, res);
   }
 };

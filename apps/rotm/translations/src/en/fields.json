@@ -64,6 +64,18 @@
     "label": "Link",
     "hint": "For example, www.gov.uk/page/1234/content#"
   },
+  "another-url-1": {
+    "label": "Link"
+  },
+  "another-url-2": {
+    "label": "Link"
+  },
+  "another-url-3": {
+    "label": "Link"
+  },
+  "another-url-4": {
+    "label": "Link"
+  },
   "can-we-contact": {
     "label": "Can we contact you?",
     "options": {

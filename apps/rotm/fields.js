@@ -19,7 +19,7 @@ module.exports = {
     options: [{
       value: 'yes',
       toggle: 'url',
-      child: 'textarea'
+      child: 'partials/url-repeater'
     }, {
       value: 'no'
     }],
@@ -27,6 +27,58 @@ module.exports = {
   'url': {
     mixin: 'textarea',
     validate: 'required',
+    disableRender: true,
+    dependent: {
+      field: 'evidence-url',
+      value: 'yes'
+    },
+    attributes: [{
+      attribute: 'rows',
+      value: 1
+    }]
+  },
+  'another-url-1': {
+    mixin: 'textarea',
+    className: 'another-url',
+    disableRender: true,
+    dependent: {
+      field: 'evidence-url',
+      value: 'yes'
+    },
+    attributes: [{
+      attribute: 'rows',
+      value: 1
+    }]
+  },
+  'another-url-2': {
+    mixin: 'textarea',
+    className: 'another-url',
+    disableRender: true,
+    dependent: {
+      field: 'evidence-url',
+      value: 'yes'
+    },
+    attributes: [{
+      attribute: 'rows',
+      value: 1
+    }]
+  },
+  'another-url-3': {
+    mixin: 'textarea',
+    className: 'another-url',
+    disableRender: true,
+    dependent: {
+      field: 'evidence-url',
+      value: 'yes'
+    },
+    attributes: [{
+      attribute: 'rows',
+      value: 1
+    }]
+  },
+  'another-url-4': {
+    mixin: 'textarea',
+    className: 'another-url',
     disableRender: true,
     dependent: {
       field: 'evidence-url',

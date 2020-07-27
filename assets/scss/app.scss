@@ -115,7 +115,7 @@ textarea.form-control {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 700;
-    
+
     line-height: 1.25;
     color: #0b0c0c;
     display: block;
@@ -129,12 +129,9 @@ textarea.form-control {
 }
 
 .govuk-inset-text {
-    // font-family: "GDS Transport",Arial,sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 400;
-    // font-size: 16px;
-    // font-size: 1rem;
     line-height: 1.25;
     color: #0b0c0c;
     padding: 15px;
@@ -160,4 +157,17 @@ textarea.form-control {
 
 .source-help {
   max-width: 75%;
+}
+
+.repeater {
+  .form-group:last-of-type {
+    margin-bottom: 0;
+  }
+  .form-control {
+    float: left;
+  }
+  .remove {
+    padding-top: 5px;
+    float: right;
+  }
 }

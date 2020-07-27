@@ -2,6 +2,7 @@
 
 const config = require('../../config');
 const skipStep = require('./behaviours/skip-step');
+const urlRepeater = require('./behaviours/url-repeater');
 const saveImage = require('./behaviours/save-image');
 const removeImage = require('./behaviours/remove-image');
 const unsetValue = require('./behaviours/unset-value');
@@ -23,10 +24,14 @@ module.exports = {
     '/evidence-url': {
       fields: [
         'url',
+        'another-url-1',
+        'another-url-2',
+        'another-url-3',
+        'another-url-4',
         'evidence-url'
       ],
       next: '/evidence-upload',
-      continueOnEdit: true
+      behaviours: [urlRepeater]
     },
     '/evidence-upload': {
       fields: [
@@ -115,7 +120,6 @@ module.exports = {
       nullValue: 'pages.confirm.undefined',
       sections: {
         summary: [
-          'url',
           'evidence-written',
           'can-we-contact'
         ],

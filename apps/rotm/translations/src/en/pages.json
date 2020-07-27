@@ -44,6 +44,9 @@
       "more-info": {
         "label": "Further information"
       },
+      "urls": {
+        "label": "Link"
+      },
       "image-preview": {
         "label": "Image"
       }

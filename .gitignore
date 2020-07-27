@@ -6,3 +6,4 @@ apps/**/translations/*
 coverage
 .env
 output/
+.emails
