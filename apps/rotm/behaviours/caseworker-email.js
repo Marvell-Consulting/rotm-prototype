@@ -10,13 +10,13 @@ const uuidv1 = require('uuid/v1');
 const parse = (model, translate) => {
   const getLabel = key => translate(`email.caseworker.fields.${key}.label`);
   const fields = [
-    'url',
     'evidence-written',
     'contact-details-name',
     'contact-email',
     'contact-phone'
   ];
   return {
+    urls: model.urls,
     images: model.images,
     table: [
       { label: getLabel('uniqueId'), value: uuidv1() },
