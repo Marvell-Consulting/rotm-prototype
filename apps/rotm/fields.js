@@ -3,7 +3,7 @@
 const path = require('path');
 
 function extname(value) {
-  return value && ['.png', '.jpg', '.jpeg'].includes(path.extname(value));
+  return value && ['.png', '.jpg', '.jpeg', '.gif', '.tiff','.mp4', '.mov', '.wmv', '.flv', '.avi', '.pdf', '.m4a', '.mp3', '.flac', '.mp4', '.wav', '.wma', '.aac'].includes(path.extname(value));
 }
 
 module.exports = {

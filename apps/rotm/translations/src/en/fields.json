@@ -1,18 +1,18 @@
 {
   "image": {
-    "label": "Select or drag an image here",
+    "label": "Select or drag evidence here",
     "validation": {
-      "required": "Select an image",
-      "extname": "Select a valid file type (jpg, jpeg, png)",
-      "unsaved": "We have not been able to upload the photo or screenshot"
+      "required": "Select a file",
+      "extname": "Select a valid file type (png, jpg, jpeg, gif, tiff, mp4, mov, wmv, flv, avi, pdf, m4a, mp3, flac, mp4, wav, wma, aac)",
+      "unsaved": "We have not been able to upload evidence"
     }
   },
   "another-image": {
-    "label": "Select or drag an image here",
+    "label": "Select or drag evidence here",
     "validation": {
-      "required": "Select an image",
-      "extname": "Select a valid file type (jpg, jpeg, png)",
-      "unsaved": "We have not been able to upload the photo or screenshot"
+      "required": "Select a file",
+      "extname": "Select a valid file type (png, jpg, jpeg, gif, tiff, mp4, mov, wmv, flv, avi, pdf, m4a, mp3, flac, mp4, wav, wma, aac)",
+      "unsaved": "We have not been able to upload evidence"
     }
   },
   "evidence-upload": {
