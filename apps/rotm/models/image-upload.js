@@ -4,6 +4,9 @@ const url = require('url');
 const Model = require('hof-model');
 const jimp = require('jimp');
 const uuid = require('uuid').v4;
+const fs = require('fs');
+const noPreview = 'data:image/png;base64,' + fs.readFileSync('assets/images/no-preview.png', {encoding: 'base64'});
+
 
 const config = require('../../../config');
 
@@ -51,7 +54,7 @@ module.exports = class UploadModel extends Model {
   thumbnail() {
     return jimp.read(this.get('data'))
       .then(image => {
-        image.resize(200, jimp.AUTO);
+        image.resize(300, jimp.AUTO);
         return new Promise((resolve, reject) => {
           image.getBase64(this.get('mimetype'), (e, data) => {
             return e ? reject(e) : resolve(data);
@@ -60,6 +63,9 @@ module.exports = class UploadModel extends Model {
       })
       .then(data => {
         this.set('thumbnail', data);
+      })
+      .catch(err => {
+        this.set('thumbnail', noPreview);
       });
   }
 
