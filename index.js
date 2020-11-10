@@ -25,6 +25,15 @@ if (config.useMocks) {
   app.use(mockAPIs);
 }
 
+app.use((req, res, next) => {
+  res.locals.footerSupportLinks = [
+    { path: '/cookies', property: 'base.cookies' },
+    { path: '/terms-and-conditions', property: 'base.terms' },
+    { path: '/accessibility', property: 'base.accessibility' },
+  ];
+  next();
+});
+
 app.use(bodyParser({limit: config.upload.maxFileSize}));
 
 module.exports = app;

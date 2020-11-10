@@ -14,6 +14,9 @@ module.exports = {
   name: 'rotm',
   params: '/:action?',
   confirmStep: '/check-your-report',
+  pages: {
+    '/accessibility': 'accessibility'
+  },
   steps: {
     '/start': {
       fields: [

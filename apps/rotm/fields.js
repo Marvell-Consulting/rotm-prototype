@@ -3,7 +3,26 @@
 const path = require('path');
 
 function extname(value) {
-  return value && ['.png', '.jpg', '.jpeg', '.gif', '.tiff','.mp4', '.mov', '.wmv', '.flv', '.avi', '.pdf', '.m4a', '.mp3', '.flac', '.mp4', '.wav', '.wma', '.aac'].includes(path.extname(value));
+  return value && [
+    '.png',
+    '.jpg',
+    '.jpeg',
+    '.gif',
+    '.tiff',
+    '.mp4',
+    '.mov',
+    '.wmv',
+    '.flv',
+    '.avi',
+    '.pdf',
+    '.m4a',
+    '.mp3',
+    '.flac',
+    '.mp4',
+    '.wav',
+    '.wma',
+    '.aac'
+  ].includes(path.extname(value).toLowerCase());
 }
 
 module.exports = {
@@ -20,7 +39,8 @@ module.exports = {
       value: 'yes',
       toggle: 'url',
       child: 'partials/url-repeater'
-    }, {
+    },
+    {
       value: 'no'
     }],
   },
