@@ -12,8 +12,7 @@
   "scripts": {
     "start": "node app.js",
     "dev": "NODE_ENV=development hof-build watch --env",
-    "test": "npm run test:unit && npm run lint",
-    "test:unit": "mocha",
+    "test": "npm run lint",
     "lint": "eslint .",
     "build": "hof-build",
     "postinstall": "npm run build"

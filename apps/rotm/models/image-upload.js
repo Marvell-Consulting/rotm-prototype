@@ -64,7 +64,7 @@ module.exports = class UploadModel extends Model {
       .then(data => {
         this.set('thumbnail', data);
       })
-      .catch(err => {
+      .catch(() => {
         this.set('thumbnail', noPreview);
       });
   }
