@@ -18,12 +18,6 @@ module.exports = {
     '/accessibility': 'accessibility'
   },
   steps: {
-    '/start': {
-      fields: [
-        'start'
-      ],
-      next: '/evidence-url'
-    },
     '/evidence-url': {
       fields: [
         'url',
