@@ -21,7 +21,7 @@
   "dependencies": {
     "busboy-body-parser": "^0.3.1",
     "device": "^0.3.11",
-    "express": "^4.16.2",
+    "express": "^4.17.3",
     "govuk-frontend": "^3.5.0",
     "hof": "^16.0.0",
     "hof-behaviour-emailer": "^2.2.0",
